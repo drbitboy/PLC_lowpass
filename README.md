@@ -1,5 +1,4 @@
 ## Load cell data filter
-====
 Cf. https://www.plctalk.net/qanda/showthread.php?t=133372
 
 Usage:
@@ -16,7 +15,6 @@ Brian T. Carcich, 2022-07-01
 
 
 ### Manifest
-====
 
 * data_fixed_plot.png - Plot of results
 * plc_lowpass.py - script to parse image pixels and plot data
