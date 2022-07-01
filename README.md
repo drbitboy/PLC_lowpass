@@ -1,6 +1,8 @@
 ## Load cell data filter
 Cf. https://www.plctalk.net/qanda/showthread.php?t=133372
 
+![](data_fixed_plot.png)
+
 Usage:
 
     python plc_lowpass.py data_fixed.png [filterfactor]
