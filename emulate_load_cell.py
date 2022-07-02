@@ -8,20 +8,32 @@ loads.reverse()
 slcdrv=pycomm3.SLCDriver('192.168.1.112/0')
 slcdrv.open()
 
-ssend,sreset,sload_cell = 'B3:0/0 B3:0/1 F8:0'.split()
-n7_0 = loads.pop()
+ssend,sreset,semulate,scancel,sload_cell = 'B3:0/0 B3:0/1 B3:0/3 B3:0/4 N7:1'.split()
+n7_1 = int(round(4096.*loads.pop() / 1000.0))
 
 slcdrv.write((sreset,True,))
-slcdrv.write((sload_cell,n7_0,))
+try:
+    slcdrv.write((semulate,True,))
+    slcdrv.write((sload_cell,n7_1,))
 
-time.sleep(5)
-slcdrv.write((sreset,False,))
+    time.sleep(5)
+    slcdrv.write((sreset,False,))
 
-while loads:
-    send_trigger = slcdrv.read(ssend)
-    if send_trigger.value:
-        slcdrv.write((ssend,False,))
-        slcdrv.write((sload_cell,n7_0,))
-        n7_0 = loads.pop()
-        if 0==(len(loads)&127): print(len(loads))
-    time.sleep(0.02)
+    while loads:
+        send_trigger = slcdrv.read(ssend)
+        if send_trigger.value:
+            slcdrv.write((ssend,False,))
+            n7_1 = int(round(4096.*loads.pop() / 1000.0))
+            slcdrv.write((sload_cell,n7_1,))
+        time.sleep(0.02)
+
+except KeyboardInterrupt:
+    pass
+except:
+    import traceback
+    traceback.print_exc()
+finally:
+    slcdrv.write((semulate,False,))
+    slcdrv.write((scancel,True,))
+    time.sleep(1.0)
+    slcdrv.write((scancel,False,))
