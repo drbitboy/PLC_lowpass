@@ -34,6 +34,7 @@ except:
     traceback.print_exc()
 finally:
     time.sleep(1.0)
+    slcdrv.write((ssend,False,))
     slcdrv.write((semulate,False,))
     slcdrv.write((scancel,True,))
     time.sleep(1.0)
