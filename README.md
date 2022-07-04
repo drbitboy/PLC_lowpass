@@ -14,7 +14,7 @@ Input image, data_fixed.png, is modified version of image data.jpg
 from Post #18 at the URL above.  This is simpler if you have the
 actual data.
 
-### Approach II:  Selection of data at or near two highest peaks in histograme of data
+### Approach II:  Selection of data at or near two highest peaks in histogram of data
 
 ![](data_histogram.png)
 
