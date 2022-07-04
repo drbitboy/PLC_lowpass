@@ -26,7 +26,7 @@ Brian T. Carcich, 2022-07-04
 
 * data_fixed_plot.png - Plot of filtered results
 * plc_lowpass.py - Script to generate data_fixed_plot.png
-* training_two_setpoints_running_0.965.RSS - RSLogix Micro Starter Lite (500-ish) program
+* training_two_setpoints_running_0.965.RSS - RSLogix Micro Starter Lite (MSL; 500-ish) program
 * training_two_setpoints_running_0.965.pdf - Printout of program and data
 
 #### Allen-Bradley MicroLogix 1100 PLC program to implement histogram approach:
