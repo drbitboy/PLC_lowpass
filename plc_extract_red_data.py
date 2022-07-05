@@ -20,6 +20,25 @@ import PIL.Image
 ### time
 ########################################################################
 
+def all_data_by_col(image_path='data.jpg'):
+    ### Import image, get width and height, convert to pixels
+    imgdata = PIL.Image.open(image_path)
+    width,height = wh = imgdata.size
+    widths,heights = map(range,wh)
+    imgseq = imgdata.getdata()
+
+    ### Loop over columns, get all data
+    return [list(zip(*sorted([(height-row,red,green,blue,)
+                         for row,(red,green,blue) in
+                         [(row,imgseq.getpixel((col,row,)),)
+                          for row in heights
+                         ]
+                        ]
+                        )
+                    )
+                )
+            for col in widths
+           ]
 
 def red_data(image_path='data_fixed.png'):
     ### Import image, get width and height, convert to pixels
