@@ -1,0 +1,2837 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <title></title>
+  <meta name="generator" content="LibreOffice 7.3.3.2 (Windows)"/>
+  <meta name="created" content="00:00:00"/>
+  <meta name="changed" content="00:00:00"/>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#000000" vlink="#000000" alink="#000000">
+<h1></h1>
+<p>RSLogix Micro Project Report</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Processor Information</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:16</p>
+<p> Processor Type: Bul.1763     MicroLogix 1100 Series B</p>
+<p> Processor Name: UNTITLED</p>
+<p> Total Memory Used: 1642 Instruction Words Used - 2431 Data Table Words Used</p>
+<p> Total Memory Left: 5014 Instruction Words Left</p>
+<p> Program Files: 11</p>
+<p> Data Files: 17</p>
+<p> Program ID: 3c54</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>I/O Configuration</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:16</p>
+<p> 0     Bul.1763            MicroLogix 1100 Series B          </p>
+<p> 1                                                           </p>
+<p> 2                                                           </p>
+<p> 3                                                           </p>
+<p> 4                                                           </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Channel Configuration</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:16</p>
+<p> CHANNEL 0 (SYSTEM) - Driver: Modbus RTU Master</p>
+<p>    CHANNEL 0 (SYSTEM) - Driver: Modbus RTU Master Edit Resource/Owner Timeout:  60</p>
+<p>    CHANNEL 0 (SYSTEM) - Driver: Modbus RTU Master Passthru Link ID:  1</p>
+<p>    CHANNEL 0 (SYSTEM) - Driver: Modbus RTU Master Write Protected:  No</p>
+<p>    CHANNEL 0 (SYSTEM) - Driver: Modbus RTU Master Comms Servicing Selection:  Yes</p>
+<p>    CHANNEL 0 (SYSTEM) - Driver: Modbus RTU Master Message Servicing Selection:  Yes</p>
+<p>    CHANNEL 0 (SYSTEM) - Driver: Modbus RTU Master 1st AWA Append Character:  \d</p>
+<p>    CHANNEL 0 (SYSTEM) - Driver: Modbus RTU Master 2nd AWA Append Character:  \a</p>
+<p>    Baud: 19200</p>
+<p>    Parity:  NONE</p>
+<p>    Control Line :  No Handshaking</p>
+<p>    InterCharacter Timeout(x1 ms):  0</p>
+<p>    Pre Transmit Delay(x1 ms):  0</p>
+<p> CHANNEL 1 (SYSTEM) - Driver: Ethernet</p>
+<p>    CHANNEL 1 (SYSTEM) - Driver: Ethernet Edit Resource/Owner Timeout:  60</p>
+<p>    CHANNEL 1 (SYSTEM) - Driver: Ethernet Passthru Link ID:  1</p>
+<p>    CHANNEL 1 (SYSTEM) - Driver: Ethernet Write Protected:  No</p>
+<p>    CHANNEL 1 (SYSTEM) - Driver: Ethernet Comms Servicing Selection:  Yes</p>
+<p>    CHANNEL 1 (SYSTEM) - Driver: Ethernet Message Servicing Selection:  Yes</p>
+<p>    Hardware Address:  00:0F:73:01:72:04</p>
+<p>    IP Address:  192.168.1.112</p>
+<p>    Subnet Mask:  255.255.255.0</p>
+<p>    Gateway Address:  192.168.1.1</p>
+<p>    Msg Connection Timeout (x 1mS):  15000</p>
+<p>    Msg Reply Timeout (x mS):  3000</p>
+<p>    Inactivity Timeout (x Min):  30</p>
+<p>    Bootp Enable:  No</p>
+<p>    Dhcp Enable  Yes</p>
+<p>    SNMP Enable:  No</p>
+<p>    HTTP Enable:  Yes</p>
+<p>    Auto Negotiate Enable:  Yes</p>
+<p>    Port Speed Enable:  10/100 Mbps Full Duplex/Half Duplex</p>
+<p>    Contact:  </p>
+<p>    Location:  </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Program File List</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:17</p>
+<p>Name </p>
+<p>Number </p>
+<p>Type </p>
+<p>Rungs </p>
+<p>Debug </p>
+<p>Bytes</p>
+<p>[SYSTEM] </p>
+<p>  0 </p>
+<p>SYS </p>
+<p>   0 </p>
+<p>No </p>
+<p>     0</p>
+<p> </p>
+<p>  1 </p>
+<p>SYS </p>
+<p>   0 </p>
+<p>No </p>
+<p>     0</p>
+<p>MAIN </p>
+<p>  2 </p>
+<p>LADDER </p>
+<p>   3 </p>
+<p>No </p>
+<p>    96</p>
+<p>LOADCELLIN </p>
+<p>  4 </p>
+<p>LADDER </p>
+<p>   5 </p>
+<p>No </p>
+<p>    96</p>
+<p>TRAINING </p>
+<p>  5 </p>
+<p>LADDER </p>
+<p>   9 </p>
+<p>No </p>
+<p>   216</p>
+<p>SCANHISTOG </p>
+<p>250 </p>
+<p>LADDER </p>
+<p>   4 </p>
+<p>No </p>
+<p>   247</p>
+<p>ADD_IRANK6 </p>
+<p>251 </p>
+<p>LADDER </p>
+<p>   7 </p>
+<p>No </p>
+<p>   486</p>
+<p>CALC_PEAKS </p>
+<p>252 </p>
+<p>LADDER </p>
+<p>   6 </p>
+<p>No </p>
+<p>   191</p>
+<p>RNK6NEWVAL </p>
+<p>253 </p>
+<p>LADDER </p>
+<p>   6 </p>
+<p>No </p>
+<p>   243</p>
+<p>RNK6BUBBLE </p>
+<p>254 </p>
+<p>LADDER </p>
+<p>   6 </p>
+<p>No </p>
+<p>   316</p>
+<p>RESETRANK6 </p>
+<p>255 </p>
+<p>LADDER </p>
+<p>   5 </p>
+<p>No </p>
+<p>   229</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File List</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:17</p>
+<p>Name </p>
+<p>Number </p>
+<p>Type </p>
+<p>Scope </p>
+<p>Debug </p>
+<p>Words </p>
+<p>Elements </p>
+<p>Last</p>
+<p>OUTPUT </p>
+<p>  0 </p>
+<p>O </p>
+<p>Global </p>
+<p>No </p>
+<p>    12 </p>
+<p>     4 </p>
+<p>O:3</p>
+<p>INPUT </p>
+<p>  1 </p>
+<p>I </p>
+<p>Global </p>
+<p>No </p>
+<p>    18 </p>
+<p>     6 </p>
+<p>I:5</p>
+<p>STATUS </p>
+<p>  2 </p>
+<p>S </p>
+<p>Global </p>
+<p>No </p>
+<p>     0 </p>
+<p>    66 </p>
+<p>S:65</p>
+<p>BINARY </p>
+<p>  3 </p>
+<p>B </p>
+<p>Global </p>
+<p>No </p>
+<p>     3 </p>
+<p>     3 </p>
+<p>B3:2</p>
+<p>TIMER </p>
+<p>  4 </p>
+<p>T </p>
+<p>Global </p>
+<p>No </p>
+<p>     6 </p>
+<p>     2 </p>
+<p>T4:1</p>
+<p>COUNTER </p>
+<p>  5 </p>
+<p>C </p>
+<p>Global </p>
+<p>No </p>
+<p>     3 </p>
+<p>     1 </p>
+<p>C5:0</p>
+<p>CONTROL </p>
+<p>  6 </p>
+<p>R </p>
+<p>Global </p>
+<p>No </p>
+<p>     3 </p>
+<p>     1 </p>
+<p>R6:0</p>
+<p>INTEGER </p>
+<p>  7 </p>
+<p>N </p>
+<p>Global </p>
+<p>No </p>
+<p>    66 </p>
+<p>    66 </p>
+<p>N7:65</p>
+<p>FLOAT </p>
+<p>  8 </p>
+<p>F </p>
+<p>Global </p>
+<p>No </p>
+<p>     2 </p>
+<p>     1 </p>
+<p>F8:0</p>
+<p>SCAN_TIMES </p>
+<p>248 </p>
+<p>L </p>
+<p>Global </p>
+<p>No </p>
+<p>   512 </p>
+<p>   256 </p>
+<p>L248:255</p>
+<p>RNK6FLOATS </p>
+<p>249 </p>
+<p>F </p>
+<p>Global </p>
+<p>No </p>
+<p>   512 </p>
+<p>   256 </p>
+<p>F249:255</p>
+<p>RNK6_INTS </p>
+<p>250 </p>
+<p>N </p>
+<p>Global </p>
+<p>No </p>
+<p>   256 </p>
+<p>   256 </p>
+<p>N250:255</p>
+<p>RNK6COUNTS </p>
+<p>251 </p>
+<p>N </p>
+<p>Global </p>
+<p>No </p>
+<p>     7 </p>
+<p>     7 </p>
+<p>N251:6</p>
+<p>RNK6BINS </p>
+<p>252 </p>
+<p>N </p>
+<p>Global </p>
+<p>No </p>
+<p>     7 </p>
+<p>     7 </p>
+<p>N252:6</p>
+<p>COUNT_I </p>
+<p>253 </p>
+<p>N </p>
+<p>Global </p>
+<p>No </p>
+<p>   256 </p>
+<p>   256 </p>
+<p>N253:255</p>
+<p>RANK6_I </p>
+<p>254 </p>
+<p>N </p>
+<p>Global </p>
+<p>No </p>
+<p>   256 </p>
+<p>   256 </p>
+<p>N254:255</p>
+<p>SUM_I </p>
+<p>255 </p>
+<p>F </p>
+<p>Global </p>
+<p>No </p>
+<p>   512 </p>
+<p>   256 </p>
+<p>F255:255</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 2 - MAIN --- Total Rungs in File = 3</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:17</p>
+<p>Load cell control - cf. https://www.plctalk.net/qanda/showthread.php?t=133372</p>
+<p>Call training routine, which will usually return immediately</p>
+<p> </p>
+<p><font color="#0000FF">0000</font></p>
+<p><font color="#0000FF">JSR</font></p>
+<p><font color="#0000FF">Jump To Subroutine</font></p>
+<p><font color="#0000FF">SBR File Number</font></p>
+<p>U:5</p>
+<p><font color="#0000FF">JSR</font></p>
+<p>TRAINING</p>
+<p>When training is inactive, continue getting load cell data every 100ms*</p>
+<p>1) If a new load cell value is available, start a 100ms timer</p>
+<p>1.1) When that timer expires, latch a 1 into SEND_LOAD_CELL_DATUM to trigger the next load cell value</p>
+<p>2) Call routine LOADCELLIN</p>
+<p>3) Copy load cell data to itself so it will be displayed here</p>
+<p>* This ensures external source of data will exhaust its data and reset EMULATE_LOADCELLDATA</p>
+<p> </p>
+<p><font color="#0000FF">0001</font></p>
+<p>B3:0</p>
+<p>5</p>
+<p>TRAINING_IS_INACTIVE</p>
+<p>B3:0</p>
+<p>0</p>
+<p>SEND_LOAD_CELL_DATUM</p>
+<p><font color="#0000FF">EN</font></p>
+<p><font color="#0000FF">DN</font></p>
+<p><font color="#0000FF">TON</font></p>
+<p><font color="#0000FF">Timer On Delay</font></p>
+<p><font color="#0000FF">Timer</font></p>
+<p>T4:1</p>
+<p><font color="#0000FF">Time Base</font></p>
+<p>0.001</p>
+<p><font color="#0000FF">Preset</font></p>
+<p>100&lt;</p>
+<p><font color="#0000FF">Accum</font></p>
+<p>91&lt;</p>
+<p><font color="#0000FF">TON</font></p>
+<p>LOAD_CELL_SAMPLING2</p>
+<p>T4:1</p>
+<p>DN</p>
+<p>LOAD_CELL_SAMPLING2/DN</p>
+<p><font color="#0000FF">L</font></p>
+<p>B3:0</p>
+<p>0</p>
+<p>SEND_LOAD_CELL_DATUM</p>
+<p><font color="#0000FF">RES</font></p>
+<p>T4:1</p>
+<p>LOAD_CELL_SAMPLING2</p>
+<p><font color="#0000FF">JSR</font></p>
+<p><font color="#0000FF">Jump To Subroutine</font></p>
+<p><font color="#0000FF">SBR File Number</font></p>
+<p>U:4</p>
+<p><font color="#0000FF">JSR</font></p>
+<p>READ_LOAD_CELL_DATA</p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>F8:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0.0&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>F8:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0.0&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>LOAD_CELL_INPUT</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 2 - MAIN --- Total Rungs in File = 3</p>
+<p>Page 2  </p>
+<p>Tuesday, July 05, 2022 - 09:08:17</p>
+<p><font color="#0000FF">0002</font></p>
+<p><font color="#0000FF">END</font></p>
+<p> </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 4 - LOADCELLIN --- Total Rungs in File = 5</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:17</p>
+<p>Notional input map routine</p>
+<p>1) scale the input load cell data from an analog input card channel when requested i.e.when SEND_LOAD_CELL_DATUM becomes 1, and</p>
+<p>2) indicate that value is ready by unlatching SEND_LOAD_CELL_DATUM to 0</p>
+<p>3) Also implement logic to allow usiing emulated data from an external source i.e. the Python script [emulate_load_cell.py]</p>
+<p>3.1) Where the external source will</p>
+<p>3.1.1) BOTH watch for SEND_LOAD_CELL_DATUM becoming 1,</p>
+<p>3.1.2) AND control the unlatching of SEND_LOAD_CELL_DATUM to 0</p>
+<p>========================================================================</p>
+<p>If SEND_LOAD_CELL_DATA is 0 i.e. not 1, then return and do nothing</p>
+<p> </p>
+<p><font color="#0000FF">0000</font></p>
+<p>B3:0</p>
+<p>0</p>
+<p>SEND_LOAD_CELL_DATUM</p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">Return</font></p>
+<p><font color="#0000FF">RET</font></p>
+<p>If execution got to here, then the process is requesting the next load cell datum (SEND_LOAD_CELL_DATUM is 1)</p>
+<p>- If the data are not being emulated from an external source, then copy the raw data from the analog input channel into the raw data buffer, LOAD_CELL_INPUT</p>
+<p>- If the data are being emulated from an external source, then that source will write a value the raw data buffer directly before unlatching SEND_LOAD_CELL_DATUM</p>
+<p> </p>
+<p><font color="#0000FF">0001</font></p>
+<p>B3:0</p>
+<p>3</p>
+<p>EMULATE_LOADCELLDATA</p>
+<p><font color="#0000FF">CPW</font></p>
+<p><font color="#0000FF">Copy Word</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>#I:0.0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#N7:1</p>
+<p><font color="#0000FF">Length</font></p>
+<p>1</p>
+<p><font color="#0000FF">CPW</font></p>
+<p>#LOAD_CELL_RAW_INPUT</p>
+<p>Scale the raw input into float LOAD_CELL_INPUT</p>
+<p> </p>
+<p><font color="#0000FF">0002</font></p>
+<p><font color="#0000FF">SCP</font></p>
+<p><font color="#0000FF">Scale w/Parameters</font></p>
+<p><font color="#0000FF">Input</font></p>
+<p>N7:1</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">Input Min.</font></p>
+<p>0.0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0.0&lt;</p>
+<p><font color="#0000FF">Input Max.</font></p>
+<p>4095.0</p>
+<p><font color="#0000FF"> </font></p>
+<p>4095.0&lt;</p>
+<p><font color="#0000FF">Scaled Min.</font></p>
+<p>0.0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0.0&lt;</p>
+<p><font color="#0000FF">Scaled Max.</font></p>
+<p>1000.0</p>
+<p><font color="#0000FF"> </font></p>
+<p>1000.0&lt;</p>
+<p><font color="#0000FF">Output</font></p>
+<p>F8:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0.0&lt;</p>
+<p><font color="#0000FF">SCP</font></p>
+<p>LOAD_CELL_INPUT</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 4 - LOADCELLIN --- Total Rungs in File = 5</p>
+<p>Page 2  </p>
+<p>Tuesday, July 05, 2022 - 09:08:18</p>
+<p>If the data are not being emulated from an external source, then unlatch SEND_LOAD_CELL_DATUM to 0</p>
+<p>If the data are being emulated from an external source, then that external source is responsible for unlatching SEND_LOAD_CELL_DATA</p>
+<p>N.B. the falling edge of SEND_LOAD_CELL_DATA will indicate to the calling routine that the new value is ready</p>
+<p> </p>
+<p><font color="#0000FF">0003</font></p>
+<p>B3:0</p>
+<p>3</p>
+<p>EMULATE_LOADCELLDATA</p>
+<p><font color="#0000FF">U</font></p>
+<p>B3:0</p>
+<p>0</p>
+<p>SEND_LOAD_CELL_DATUM</p>
+<p><font color="#0000FF">0004</font></p>
+<p><font color="#0000FF">END</font></p>
+<p> </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 5 - TRAINING --- Total Rungs in File = 9</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:18</p>
+<p>Training routine - cf. https://www.plctalk.net/qanda/showthread.php?t=133372</p>
+<p>Train PLC to sample load cell values and find the mean of the two most steady values using</p>
+<p>a histogram of the values sampled</p>
+<p>Inputs and Outputs</p>
+<p>- RESET_TRAINING</p>
+<p>  - Discrete momentary (push button?). or controlled by external data emulator (emulate_load_cell.py)</p>
+<p>  - When pressed, initializes training values</p>
+<p>  - When released (falling edge), starts a training rung</p>
+<p>- LOAD_CELL_INPUT</p>
+<p>  - Analog float value that is loaded from load cell in response to a rising edge of Boolean SEND_LOAD_CELL_DATUM</p>
+<p>- SEND_LOAD_CELL_DATUM (both output-ish and input-ish)</p>
+<p>  - Output:  written to as a 1 by this routine to indicate 100ms have expired and it is time for the next load cell value</p>
+<p>  - Input:  written to as a 0 by another entity to after putting a new value into LOAD_CELL_INPUT</p>
+<p>    - This falling edge indicates a new LOAD_CELL_INPUT is ready</p>
+<p>    - The other entity could be an I/O mapping routine, or the Python script [emulate_load_cell.py]</p>
+<p>========================================================================</p>
+<p>First rung:  respond to request to cancel training</p>
+<p> </p>
+<p><font color="#0000FF">0000</font></p>
+<p>B3:0</p>
+<p>4</p>
+<p>CANCEL_TRAINING</p>
+<p>S:1</p>
+<p>15</p>
+<p>First Pass</p>
+<p><font color="#0000FF">U</font></p>
+<p>B3:0</p>
+<p>1</p>
+<p>RESET_TRAINING</p>
+<p><font color="#0000FF">L</font></p>
+<p>B3:0</p>
+<p>5</p>
+<p>TRAINING_IS_INACTIVE</p>
+<p><font color="#0000FF">0001</font></p>
+<p><font color="#0000FF">JSR</font></p>
+<p><font color="#0000FF">Jump To Subroutine</font></p>
+<p><font color="#0000FF">SBR File Number</font></p>
+<p>U:250</p>
+<p><font color="#0000FF">JSR</font></p>
+<p>SCAN_TIME_HISTOGRAM</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 5 - TRAINING --- Total Rungs in File = 9</p>
+<p>Page 2  </p>
+<p>Tuesday, July 05, 2022 - 09:08:18</p>
+<p><font color="#0000FF">0002</font></p>
+<p>B3:0</p>
+<p>1</p>
+<p>RESET_TRAINING</p>
+<p><font color="#0000FF">JSR</font></p>
+<p><font color="#0000FF">Jump To Subroutine</font></p>
+<p><font color="#0000FF">SBR File Number</font></p>
+<p>U:255</p>
+<p><font color="#0000FF">JSR</font></p>
+<p>RESET_RANK6_ARRAYS</p>
+<p><font color="#0000FF">RES</font></p>
+<p>C5:0</p>
+<p>TOTAL_COUNT</p>
+<p><font color="#0000FF">U</font></p>
+<p>B3:0</p>
+<p>5</p>
+<p>TRAINING_IS_INACTIVE</p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">Return</font></p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">0003</font></p>
+<p>B3:0</p>
+<p>5</p>
+<p>TRAINING_IS_INACTIVE</p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">Return</font></p>
+<p><font color="#0000FF">RET</font></p>
+<p>When SEND_LOAD_CELL_DATUM is 0, indicating a new load cell value is available, start a 100ms timer</p>
+<p>When that timer expires, latch a 1 into SEND_LOAD_CELL_DATUM to trigger an external process to get the next load cell value</p>
+<p>*** N.B. the external process will unlatch a 0 into SEND_LOAD_CELL_DATA to indicate the next load cell value is ready</p>
+<p> </p>
+<p><font color="#0000FF">0004</font></p>
+<p>B3:0</p>
+<p>0</p>
+<p>SEND_LOAD_CELL_DATUM</p>
+<p>B3:0</p>
+<p>1</p>
+<p>RESET_TRAINING</p>
+<p><font color="#0000FF">EN</font></p>
+<p><font color="#0000FF">DN</font></p>
+<p><font color="#0000FF">TON</font></p>
+<p><font color="#0000FF">Timer On Delay</font></p>
+<p><font color="#0000FF">Timer</font></p>
+<p>T4:0</p>
+<p><font color="#0000FF">Time Base</font></p>
+<p>0.001</p>
+<p><font color="#0000FF">Preset</font></p>
+<p>100&lt;</p>
+<p><font color="#0000FF">Accum</font></p>
+<p>28&lt;</p>
+<p><font color="#0000FF">TON</font></p>
+<p>LOAD_CELL_SAMPLING</p>
+<p>T4:0</p>
+<p>DN</p>
+<p>LOAD_CELL_SAMPLING/DN</p>
+<p><font color="#0000FF">L</font></p>
+<p>B3:0</p>
+<p>0</p>
+<p>SEND_LOAD_CELL_DATUM</p>
+<p>Detect the falling edge (one-shot) of SEND_LOAD_CELL_DATUM, to respond to the next load cell value</p>
+<p> </p>
+<p><font color="#0000FF">0005</font></p>
+<p>B3:0</p>
+<p>0</p>
+<p>SEND_LOAD_CELL_DATUM</p>
+<p><font color="#0000FF">ONS</font></p>
+<p>B3:0</p>
+<p>15</p>
+<p>NEW_DATA_ONESHOT_MEM</p>
+<p>B3:0</p>
+<p>1</p>
+<p>RESET_TRAINING</p>
+<p><font color="#0000FF"> </font></p>
+<p>B3:0</p>
+<p>2</p>
+<p>NEW_DATA_ONESHOT</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 5 - TRAINING --- Total Rungs in File = 9</p>
+<p>Page 3  </p>
+<p>Tuesday, July 05, 2022 - 09:08:18</p>
+<p>Read the raw load cell data, scale to float LOAD_CELL_INPUT</p>
+<p>N.B. The one-shot in the rung above needs to be between</p>
+<p>        - the timer in the rung above that, which that latches SEND_LOAD_CELL_DATA to 1,</p>
+<p>        - and this rung</p>
+<p>        so that the one-shot can detect a falling edge, because the </p>
+<p> </p>
+<p><font color="#0000FF">0006</font></p>
+<p><font color="#0000FF">JSR</font></p>
+<p><font color="#0000FF">Jump To Subroutine</font></p>
+<p><font color="#0000FF">SBR File Number</font></p>
+<p>U:4</p>
+<p><font color="#0000FF">JSR</font></p>
+<p>READ_LOAD_CELL_DATA</p>
+<p>On any scan when a new load cell value is available (see one-shot on previous rung)</p>
+<p>- Call the Rank6 top-level routine</p>
+<p>  - Inserts the new value into its bin in the histogram (Data File COUNT_I)</p>
+<p>  - Adds the new value to the sum for its bin (Data File SUM_I)</p>
+<p>  - Calls the Rank6 rountineetermine the six bins with the highest count values</p>
+<p>  - Calculate one or two means for the two highest peak of those six bins</p>
+<p>- Count the total number of load cell values used</p>
+<p> </p>
+<p><font color="#0000FF">0007</font></p>
+<p>B3:0</p>
+<p>2</p>
+<p>NEW_DATA_ONESHOT</p>
+<p><font color="#0000FF">JSR</font></p>
+<p><font color="#0000FF">Jump To Subroutine</font></p>
+<p><font color="#0000FF">SBR File Number</font></p>
+<p>U:253</p>
+<p><font color="#0000FF">JSR</font></p>
+<p>RANK6_ADD_NEW_VALUE</p>
+<p><font color="#0000FF">CU</font></p>
+<p><font color="#0000FF">DN</font></p>
+<p><font color="#0000FF">CTU</font></p>
+<p><font color="#0000FF">Count Up</font></p>
+<p><font color="#0000FF">Counter</font></p>
+<p>C5:0</p>
+<p><font color="#0000FF">Preset</font></p>
+<p>100&lt;</p>
+<p><font color="#0000FF">Accum</font></p>
+<p>1873&lt;</p>
+<p><font color="#0000FF">CTU</font></p>
+<p>TOTAL_COUNT</p>
+<p><font color="#0000FF">0008</font></p>
+<p><font color="#0000FF">END</font></p>
+<p> </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 250 - SCANHISTOG --- Total Rungs in File = 4</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:18</p>
+<p><font color="#0000FF">0000</font></p>
+<p>B3:0</p>
+<p>1</p>
+<p>RESET_TRAINING</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#N7:2</p>
+<p><font color="#0000FF">Length</font></p>
+<p>64</p>
+<p><font color="#0000FF">FLL</font></p>
+<p>#S35_SCAN_TIME</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#L248:64</p>
+<p><font color="#0000FF">Length</font></p>
+<p>64</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#L248:128</p>
+<p><font color="#0000FF">Length</font></p>
+<p>64</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#L248:192</p>
+<p><font color="#0000FF">Length</font></p>
+<p>64</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">Return</font></p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">0001</font></p>
+<p>B3:0</p>
+<p>5</p>
+<p>TRAINING_IS_INACTIVE</p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">Return</font></p>
+<p><font color="#0000FF">RET</font></p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 250 - SCANHISTOG --- Total Rungs in File = 4</p>
+<p>Page 2  </p>
+<p>Tuesday, July 05, 2022 - 09:08:18</p>
+<p><font color="#0000FF">0002</font></p>
+<p><font color="#0000FF">LIM</font></p>
+<p><font color="#0000FF">Limit Test</font></p>
+<p><font color="#0000FF">Low Lim</font></p>
+<p>1</p>
+<p><font color="#0000FF"> </font></p>
+<p>1&lt;</p>
+<p><font color="#0000FF">Test</font></p>
+<p>S:35</p>
+<p><font color="#0000FF"> </font></p>
+<p>7&lt;</p>
+<p><font color="#0000FF">High Lim</font></p>
+<p>127</p>
+<p><font color="#0000FF"> </font></p>
+<p>127&lt;</p>
+<p><font color="#0000FF">LIM</font></p>
+<p>Last 1 ms</p>
+<p>Scan Time</p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>S:35</p>
+<p><font color="#0000FF"> </font></p>
+<p>7&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N7:2</p>
+<p><font color="#0000FF"> </font></p>
+<p>6&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>S35_SCAN_TIME</p>
+<p><font color="#0000FF">ADD</font></p>
+<p><font color="#0000FF">Add</font></p>
+<p><font color="#0000FF">Source A</font> L248:[N7:2]</p>
+<p><font color="#0000FF"> </font></p>
+<p>38767&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>1</p>
+<p><font color="#0000FF"> </font></p>
+<p>1&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>L248:[N7:2]</p>
+<p><font color="#0000FF"> </font></p>
+<p>38767&lt;</p>
+<p><font color="#0000FF">ADD</font></p>
+<p>L248:[S35_SCAN_TIME]</p>
+<p>B3:0</p>
+<p>2</p>
+<p>NEW_DATA_ONESHOT</p>
+<p><font color="#0000FF">ADD</font></p>
+<p><font color="#0000FF">Add</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N7:2</p>
+<p><font color="#0000FF"> </font></p>
+<p>6&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>128</p>
+<p><font color="#0000FF"> </font></p>
+<p>128&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N7:2</p>
+<p><font color="#0000FF"> </font></p>
+<p>6&lt;</p>
+<p><font color="#0000FF">ADD</font></p>
+<p>S35_SCAN_TIME</p>
+<p><font color="#0000FF">ADD</font></p>
+<p><font color="#0000FF">Add</font></p>
+<p><font color="#0000FF">Source A</font> L248:[N7:2]</p>
+<p><font color="#0000FF"> </font></p>
+<p>38767&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>1</p>
+<p><font color="#0000FF"> </font></p>
+<p>1&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>L248:[N7:2]</p>
+<p><font color="#0000FF"> </font></p>
+<p>38767&lt;</p>
+<p><font color="#0000FF">ADD</font></p>
+<p>L248:[S35_SCAN_TIME]</p>
+<p><font color="#0000FF">0003</font></p>
+<p><font color="#0000FF">END</font></p>
+<p> </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 251 - ADD_IRANK6 --- Total Rungs in File = 7</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:18</p>
+<p>Test if a bin is at or near one of the two count peaks of the binned data</p>
+<p>If the bin is at or near one of the peaks, add the bin's data to the data for that peak</p>
+<p>========================================================================</p>
+<p>Return and do nothing if the input rank value is invalid</p>
+<p> </p>
+<p><font color="#0000FF">0000</font></p>
+<p><font color="#0000FF">LIM</font></p>
+<p><font color="#0000FF">Limit Test</font></p>
+<p><font color="#0000FF">Low Lim</font></p>
+<p>7</p>
+<p><font color="#0000FF"> </font></p>
+<p>7&lt;</p>
+<p><font color="#0000FF">Test</font></p>
+<p>N250:9</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">High Lim</font></p>
+<p>0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">LIM</font></p>
+<p>PEAKS_IRANK6</p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">Return</font></p>
+<p><font color="#0000FF">RET</font></p>
+<p>Convert the rank to the number of the bin-to-test; return and do nothing else if the bin-to-test is invalid</p>
+<p> </p>
+<p><font color="#0000FF">0001</font></p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>N252:[N250:9]</p>
+<p><font color="#0000FF"> </font></p>
+<p>70&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:10</p>
+<p><font color="#0000FF"> </font></p>
+<p>38&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>PEAKS_IBIN</p>
+<p><font color="#0000FF">LIM</font></p>
+<p><font color="#0000FF">Limit Test</font></p>
+<p><font color="#0000FF">Low Lim</font></p>
+<p>256</p>
+<p><font color="#0000FF"> </font></p>
+<p>256&lt;</p>
+<p><font color="#0000FF">Test</font></p>
+<p>N250:10</p>
+<p><font color="#0000FF"> </font></p>
+<p>38&lt;</p>
+<p><font color="#0000FF">High Lim</font></p>
+<p>-1</p>
+<p><font color="#0000FF"> </font></p>
+<p>-1&lt;</p>
+<p><font color="#0000FF">LIM</font></p>
+<p>PEAKS_IBIN</p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">Return</font></p>
+<p><font color="#0000FF">RET</font></p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 251 - ADD_IRANK6 --- Total Rungs in File = 7</p>
+<p>Page 2  </p>
+<p>Tuesday, July 05, 2022 - 09:08:18</p>
+<p>If the first peak has not yet been determined, then</p>
+<p>- Set the first peak's low and high limits equal to the bin-to-test, so the bin will initialize the first peak</p>
+<p>- Clear all of the first and second peaks' data (values' sums; counts; means)</p>
+<p> </p>
+<p><font color="#0000FF">0002</font></p>
+<p><font color="#0000FF">LES</font></p>
+<p><font color="#0000FF">Less Than (A&lt;B)</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:5</p>
+<p><font color="#0000FF"> </font></p>
+<p>66&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">LES</font></p>
+<p>1ST_PEAK_LO_LIMIT</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>N250:10</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#N250:5</p>
+<p><font color="#0000FF">Length</font></p>
+<p>2</p>
+<p><font color="#0000FF">FLL</font></p>
+<p>#1ST_PEAK_LO_LIMIT</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0.0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#F249:0</p>
+<p><font color="#0000FF">Length</font></p>
+<p>6</p>
+<p><font color="#0000FF">FLL</font></p>
+<p>#1ST_PEAK_VALUES_SUM</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 251 - ADD_IRANK6 --- Total Rungs in File = 7</p>
+<p>Page 3  </p>
+<p>Tuesday, July 05, 2022 - 09:08:19</p>
+<p>If the bin-to-test is in the first peak's [lo_limit:hi_limit] range, then add the bin's data to the first peak:</p>
+<p>1) If the bin is equal to the low limit, then decrement the low limit by 1 bin to catch the next lower bin, if it is tested later</p>
+<p>2) If the bin is equal to the high limit, then increment the high limit by 1 bin to catch the next higher bin, if it is tested later</p>
+<p>3) Add the sum of the values in the bin-to-test to the first peak's values' sum</p>
+<p>4) Add the count of the values in the bin-to-test to the first peak's counts</p>
+<p>5) Return and do nothing else in this routine, because the bin-to-test is in the first peak, so it cannot be in the second peak</p>
+<p> </p>
+<p><font color="#0000FF">0003</font></p>
+<p><font color="#0000FF">LIM</font></p>
+<p><font color="#0000FF">Limit Test</font></p>
+<p><font color="#0000FF">Low Lim</font></p>
+<p>N250:5</p>
+<p><font color="#0000FF"> </font></p>
+<p>66&lt;</p>
+<p><font color="#0000FF">Test</font></p>
+<p>N250:10</p>
+<p><font color="#0000FF"> </font></p>
+<p>38&lt;</p>
+<p><font color="#0000FF">High Lim</font></p>
+<p>N250:6</p>
+<p><font color="#0000FF"> </font></p>
+<p>70&lt;</p>
+<p><font color="#0000FF">LIM</font></p>
+<p>PEAKS_IBIN</p>
+<p><font color="#0000FF">EQU</font></p>
+<p><font color="#0000FF">Equal</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:10</p>
+<p><font color="#0000FF"> </font></p>
+<p>38&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>N250:5</p>
+<p><font color="#0000FF"> </font></p>
+<p>66&lt;</p>
+<p><font color="#0000FF">EQU</font></p>
+<p>PEAKS_IBIN</p>
+<p><font color="#0000FF">SUB</font></p>
+<p><font color="#0000FF">Subtract</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:5</p>
+<p><font color="#0000FF"> </font></p>
+<p>66&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>1</p>
+<p><font color="#0000FF"> </font></p>
+<p>1&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:5</p>
+<p><font color="#0000FF"> </font></p>
+<p>66&lt;</p>
+<p><font color="#0000FF">SUB</font></p>
+<p>1ST_PEAK_LO_LIMIT</p>
+<p><font color="#0000FF">EQU</font></p>
+<p><font color="#0000FF">Equal</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:10</p>
+<p><font color="#0000FF"> </font></p>
+<p>38&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>N250:6</p>
+<p><font color="#0000FF"> </font></p>
+<p>70&lt;</p>
+<p><font color="#0000FF">EQU</font></p>
+<p>PEAKS_IBIN</p>
+<p><font color="#0000FF">ADD</font></p>
+<p><font color="#0000FF">Add</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:6</p>
+<p><font color="#0000FF"> </font></p>
+<p>70&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>1</p>
+<p><font color="#0000FF"> </font></p>
+<p>1&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:6</p>
+<p><font color="#0000FF"> </font></p>
+<p>70&lt;</p>
+<p><font color="#0000FF">ADD</font></p>
+<p>1ST_PEAK_HI_LIMIT</p>
+<p><font color="#0000FF">ADD</font></p>
+<p><font color="#0000FF">Add</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>F249:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>252297.8&lt;</p>
+<p><font color="#0000FF">Source B</font> F255:[N250:10]</p>
+<p><font color="#0000FF"> </font></p>
+<p>5978.022&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>F249:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>252297.8&lt;</p>
+<p><font color="#0000FF">ADD</font></p>
+<p>1ST_PEAK_VALUES_SUM</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 251 - ADD_IRANK6 --- Total Rungs in File = 7</p>
+<p>Page 4  </p>
+<p>Tuesday, July 05, 2022 - 09:08:19</p>
+<p><font color="#0000FF">ADD</font></p>
+<p><font color="#0000FF">Add</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>F249:1</p>
+<p><font color="#0000FF"> </font></p>
+<p>931.0&lt;</p>
+<p><font color="#0000FF">Source B</font> N253:[N250:10]</p>
+<p><font color="#0000FF"> </font></p>
+<p>39&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>F249:1</p>
+<p><font color="#0000FF"> </font></p>
+<p>931.0&lt;</p>
+<p><font color="#0000FF">ADD</font></p>
+<p>1ST_PEAK_COUNTS_SUM</p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">Return</font></p>
+<p><font color="#0000FF">RET</font></p>
+<p>If the second peak has not yet been determined, then</p>
+<p>- Set the second peak's low and high limits equal to the bin-to-test, so the bin will initialize the second peak</p>
+<p>- Clear the second peaks' data (values' sums; counts; means)</p>
+<p> </p>
+<p><font color="#0000FF">0004</font></p>
+<p><font color="#0000FF">LES</font></p>
+<p><font color="#0000FF">Less Than (A&lt;B)</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:7</p>
+<p><font color="#0000FF"> </font></p>
+<p>44&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">LES</font></p>
+<p>2ND_PEAK_LO_LIMIT</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>N250:10</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#N250:7</p>
+<p><font color="#0000FF">Length</font></p>
+<p>2</p>
+<p><font color="#0000FF">FLL</font></p>
+<p>#2ND_PEAK_LO_LIMIT</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0.0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#F249:3</p>
+<p><font color="#0000FF">Length</font></p>
+<p>3</p>
+<p><font color="#0000FF">FLL</font></p>
+<p>#2ND_PEAK_VALUES_SUM</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 251 - ADD_IRANK6 --- Total Rungs in File = 7</p>
+<p>Page 5  </p>
+<p>Tuesday, July 05, 2022 - 09:08:19</p>
+<p>If the bin-to-test is in the second peak's [lo_limit:hi_limit] range, then add the bin's data to the second peak:</p>
+<p>1) If the bin is equal to the low limit, then decrement the low limit by 1 bin to catch the next lower bin, if it is tested later</p>
+<p>2) If the bin is equal to the high limit, then increment the high limit by 1 bin to catch the next higher bin, if it is tested later</p>
+<p>3) Add the sum of the values in the bin-to-test to the second peak's values' sum</p>
+<p>4) Add the count of the values in the bin-to-test to the second peak's counts</p>
+<p>5) The return is superfluous since this was originally the last rung in this routine, but this leaves open the possibility to add more peaks</p>
+<p> </p>
+<p><font color="#0000FF">0005</font></p>
+<p><font color="#0000FF">LIM</font></p>
+<p><font color="#0000FF">Limit Test</font></p>
+<p><font color="#0000FF">Low Lim</font></p>
+<p>N250:7</p>
+<p><font color="#0000FF"> </font></p>
+<p>44&lt;</p>
+<p><font color="#0000FF">Test</font></p>
+<p>N250:10</p>
+<p><font color="#0000FF"> </font></p>
+<p>38&lt;</p>
+<p><font color="#0000FF">High Lim</font></p>
+<p>N250:8</p>
+<p><font color="#0000FF"> </font></p>
+<p>47&lt;</p>
+<p><font color="#0000FF">LIM</font></p>
+<p>PEAKS_IBIN</p>
+<p><font color="#0000FF">EQU</font></p>
+<p><font color="#0000FF">Equal</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:10</p>
+<p><font color="#0000FF"> </font></p>
+<p>38&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>N250:7</p>
+<p><font color="#0000FF"> </font></p>
+<p>44&lt;</p>
+<p><font color="#0000FF">EQU</font></p>
+<p>PEAKS_IBIN</p>
+<p><font color="#0000FF">SUB</font></p>
+<p><font color="#0000FF">Subtract</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:7</p>
+<p><font color="#0000FF"> </font></p>
+<p>44&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>1</p>
+<p><font color="#0000FF"> </font></p>
+<p>1&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:7</p>
+<p><font color="#0000FF"> </font></p>
+<p>44&lt;</p>
+<p><font color="#0000FF">SUB</font></p>
+<p>2ND_PEAK_LO_LIMIT</p>
+<p><font color="#0000FF">EQU</font></p>
+<p><font color="#0000FF">Equal</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:10</p>
+<p><font color="#0000FF"> </font></p>
+<p>38&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>N250:8</p>
+<p><font color="#0000FF"> </font></p>
+<p>47&lt;</p>
+<p><font color="#0000FF">EQU</font></p>
+<p>PEAKS_IBIN</p>
+<p><font color="#0000FF">ADD</font></p>
+<p><font color="#0000FF">Add</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:8</p>
+<p><font color="#0000FF"> </font></p>
+<p>47&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>1</p>
+<p><font color="#0000FF"> </font></p>
+<p>1&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:8</p>
+<p><font color="#0000FF"> </font></p>
+<p>47&lt;</p>
+<p><font color="#0000FF">ADD</font></p>
+<p>2ND_PEAK_HI_LIMIT</p>
+<p><font color="#0000FF">ADD</font></p>
+<p><font color="#0000FF">Add</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>F249:3</p>
+<p><font color="#0000FF"> </font></p>
+<p>106421.1&lt;</p>
+<p><font color="#0000FF">Source B</font> F255:[N250:10]</p>
+<p><font color="#0000FF"> </font></p>
+<p>5978.022&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>F249:3</p>
+<p><font color="#0000FF"> </font></p>
+<p>106421.1&lt;</p>
+<p><font color="#0000FF">ADD</font></p>
+<p>2ND_PEAK_VALUES_SUM</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 251 - ADD_IRANK6 --- Total Rungs in File = 7</p>
+<p>Page 6  </p>
+<p>Tuesday, July 05, 2022 - 09:08:19</p>
+<p><font color="#0000FF">ADD</font></p>
+<p><font color="#0000FF">Add</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>F249:4</p>
+<p><font color="#0000FF"> </font></p>
+<p>579.0&lt;</p>
+<p><font color="#0000FF">Source B</font> N253:[N250:10]</p>
+<p><font color="#0000FF"> </font></p>
+<p>39&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>F249:4</p>
+<p><font color="#0000FF"> </font></p>
+<p>579.0&lt;</p>
+<p><font color="#0000FF">ADD</font></p>
+<p>2ND_PEAK_COUNTS_SUM</p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">Return</font></p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">0006</font></p>
+<p><font color="#0000FF">END</font></p>
+<p> </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 252 - CALC_PEAKS --- Total Rungs in File = 6</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:19</p>
+<p>Calculate two means at, or near the two highest-count peaks in the Ran6 bins</p>
+<p>Initialize both peaks' bin limits to -1</p>
+<p> </p>
+<p><font color="#0000FF">0000</font></p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>-1</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#N250:5</p>
+<p><font color="#0000FF">Length</font></p>
+<p>4</p>
+<p><font color="#0000FF">FLL</font></p>
+<p>#1ST_PEAK_LO_LIMIT</p>
+<p>Loop through the Rank6 count-sorted arrays from the highest-count bin in element 6 to the lowest-count bin in element 1</p>
+<p>- Call the ADD_ONE_RANK6_MEMBER to determine if each such bin is at, or near one of the two peaks of the histogram</p>
+<p>N.B. Element 0 is ignored, as it is the nominal location for all bins that are not in the top six</p>
+<p> </p>
+<p><font color="#0000FF">0001</font></p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>6</p>
+<p><font color="#0000FF"> </font></p>
+<p>6&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:9</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>PEAKS_IRANK6</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 252 - CALC_PEAKS --- Total Rungs in File = 6</p>
+<p>Page 2  </p>
+<p>Tuesday, July 05, 2022 - 09:08:19</p>
+<p><font color="#0000FF">0002</font></p>
+<p><font color="#0000FF">LBL</font></p>
+<p>Q252:0</p>
+<p><font color="#0000FF">GRT</font></p>
+<p><font color="#0000FF">Greater Than (A&gt;B)</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:9</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">GRT</font></p>
+<p>PEAKS_IRANK6</p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>N252:[N250:9]</p>
+<p><font color="#0000FF"> </font></p>
+<p>70&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:10</p>
+<p><font color="#0000FF"> </font></p>
+<p>38&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>PEAKS_IBIN</p>
+<p><font color="#0000FF">JSR</font></p>
+<p><font color="#0000FF">Jump To Subroutine</font></p>
+<p><font color="#0000FF">SBR File Number</font></p>
+<p>U:251</p>
+<p><font color="#0000FF">JSR</font></p>
+<p>ADD_ONE_RANK6_MEMBER</p>
+<p><font color="#0000FF">SUB</font></p>
+<p><font color="#0000FF">Subtract</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:9</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>1</p>
+<p><font color="#0000FF"> </font></p>
+<p>1&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:9</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">SUB</font></p>
+<p>PEAKS_IRANK6</p>
+<p><font color="#0000FF">JMP</font></p>
+<p>Q252:0</p>
+<p>Calculate the weighted mean of the data at or near each peak</p>
+<p> </p>
+<p><font color="#0000FF">0003</font></p>
+<p><font color="#0000FF">GRT</font></p>
+<p><font color="#0000FF">Greater Than (A&gt;B)</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>F249:1</p>
+<p><font color="#0000FF"> </font></p>
+<p>931.0&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>0.0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0.0&lt;</p>
+<p><font color="#0000FF">GRT</font></p>
+<p>1ST_PEAK_COUNTS_SUM</p>
+<p><font color="#0000FF">DIV</font></p>
+<p><font color="#0000FF">Divide</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>F249:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>252297.8&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>F249:1</p>
+<p><font color="#0000FF"> </font></p>
+<p>931.0&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>F249:2</p>
+<p><font color="#0000FF"> </font></p>
+<p>270.9966&lt;</p>
+<p><font color="#0000FF">DIV</font></p>
+<p>1ST_PEAK_WEIGHT_MEAN</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 252 - CALC_PEAKS --- Total Rungs in File = 6</p>
+<p>Page 3  </p>
+<p>Tuesday, July 05, 2022 - 09:08:19</p>
+<p><font color="#0000FF">0004</font></p>
+<p><font color="#0000FF">GRT</font></p>
+<p><font color="#0000FF">Greater Than (A&gt;B)</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>F249:4</p>
+<p><font color="#0000FF"> </font></p>
+<p>579.0&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>0.0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0.0&lt;</p>
+<p><font color="#0000FF">GRT</font></p>
+<p>2ND_PEAK_COUNTS_SUM</p>
+<p><font color="#0000FF">DIV</font></p>
+<p><font color="#0000FF">Divide</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>F249:3</p>
+<p><font color="#0000FF"> </font></p>
+<p>106421.1&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>F249:4</p>
+<p><font color="#0000FF"> </font></p>
+<p>579.0&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>F249:5</p>
+<p><font color="#0000FF"> </font></p>
+<p>183.8016&lt;</p>
+<p><font color="#0000FF">DIV</font></p>
+<p>2ST_PEAK_WEIGHT_MEAN</p>
+<p><font color="#0000FF">0005</font></p>
+<p><font color="#0000FF">END</font></p>
+<p> </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 253 - RNK6NEWVAL --- Total Rungs in File = 6</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:19</p>
+<p>Add a new measured value into the Rank6 arrays</p>
+<p>Convert the load cell newly-measured float value to an integer,</p>
+<p>shift that integer two bits to the right to get INEWBIN,</p>
+<p>which is the bin number, of bins 4 units wide, of the new value</p>
+<p>- If that bin number is outside the range [0:255], then return and do nothing else in this routine</p>
+<p> </p>
+<p><font color="#0000FF">0000</font></p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>F8:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0.0&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>46&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>INEWBIN</p>
+<p><font color="#0000FF">AND</font></p>
+<p><font color="#0000FF">Bitwise AND</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>002Eh&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>-4</p>
+<p><font color="#0000FF"> </font></p>
+<p>-4&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>002Eh&lt;</p>
+<p><font color="#0000FF">AND</font></p>
+<p>INEWBIN</p>
+<p><font color="#0000FF">DIV</font></p>
+<p><font color="#0000FF">Divide</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>46&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>4</p>
+<p><font color="#0000FF"> </font></p>
+<p>4&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>46&lt;</p>
+<p><font color="#0000FF">DIV</font></p>
+<p>INEWBIN</p>
+<p><font color="#0000FF">LIM</font></p>
+<p><font color="#0000FF">Limit Test</font></p>
+<p><font color="#0000FF">Low Lim</font></p>
+<p>256</p>
+<p><font color="#0000FF"> </font></p>
+<p>256&lt;</p>
+<p><font color="#0000FF">Test</font></p>
+<p>N250:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>46&lt;</p>
+<p><font color="#0000FF">High Lim</font></p>
+<p>-1</p>
+<p><font color="#0000FF"> </font></p>
+<p>-1&lt;</p>
+<p><font color="#0000FF">LIM</font></p>
+<p>INEWBIN</p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">Return</font></p>
+<p><font color="#0000FF">RET</font></p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 253 - RNK6NEWVAL --- Total Rungs in File = 6</p>
+<p>Page 2  </p>
+<p>Tuesday, July 05, 2022 - 09:08:19</p>
+<p>Increment the count array element at that bin number by 1;</p>
+<p>Increment the sum array element at that bin number by the new float value</p>
+<p> </p>
+<p><font color="#0000FF">0001</font></p>
+<p><font color="#0000FF">ADD</font></p>
+<p><font color="#0000FF">Add</font></p>
+<p><font color="#0000FF">Source A</font> N253:[N250:0]</p>
+<p><font color="#0000FF"> </font></p>
+<p>345&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>1</p>
+<p><font color="#0000FF"> </font></p>
+<p>1&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N253:[N250:0]</p>
+<p><font color="#0000FF"> </font></p>
+<p>345&lt;</p>
+<p><font color="#0000FF">ADD</font></p>
+<p>__COUNT_INEWBIN</p>
+<p><font color="#0000FF">ADD</font></p>
+<p><font color="#0000FF">Add</font></p>
+<p><font color="#0000FF">Source A</font> F255:[N250:0]</p>
+<p><font color="#0000FF"> </font></p>
+<p>63675.77&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>F8:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0.0&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>F255:[N250:0]</p>
+<p><font color="#0000FF"> </font></p>
+<p>63675.77&lt;</p>
+<p><font color="#0000FF">ADD</font></p>
+<p>__SUM_IBINS</p>
+<p>Run six passes of the Rank6 bubble sort routine to place</p>
+<p>- the count of that bin in the correct element of the sorted-by-count six-element array RNK6COUNTS[1:6], and</p>
+<p>- the bin number in the count-sorted element of RNK6BINS[1:6]</p>
+<p> </p>
+<p><font color="#0000FF">0002</font></p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>6</p>
+<p><font color="#0000FF"> </font></p>
+<p>6&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:4</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>BUBBLE_SORT_PASS</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 253 - RNK6NEWVAL --- Total Rungs in File = 6</p>
+<p>Page 3  </p>
+<p>Tuesday, July 05, 2022 - 09:08:19</p>
+<p><font color="#0000FF">0003</font></p>
+<p><font color="#0000FF">LBL</font></p>
+<p>Q253:0</p>
+<p><font color="#0000FF">GRT</font></p>
+<p><font color="#0000FF">Greater Than (A&gt;B)</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:4</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>0</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">GRT</font></p>
+<p>BUBBLE_SORT_PASS</p>
+<p><font color="#0000FF">JSR</font></p>
+<p><font color="#0000FF">Jump To Subroutine</font></p>
+<p><font color="#0000FF">SBR File Number</font></p>
+<p>U:254</p>
+<p><font color="#0000FF">JSR</font></p>
+<p>RANK6_BUBBLE_SORT</p>
+<p><font color="#0000FF">SUB</font></p>
+<p><font color="#0000FF">Subtract</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:4</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>1</p>
+<p><font color="#0000FF"> </font></p>
+<p>1&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:4</p>
+<p><font color="#0000FF"> </font></p>
+<p>0&lt;</p>
+<p><font color="#0000FF">SUB</font></p>
+<p>BUBBLE_SORT_PASS</p>
+<p><font color="#0000FF">JMP</font></p>
+<p>Q253:0</p>
+<p>Calculate weighted means for data at, and near, each of the two highest-count Rank6 bins of the histogram</p>
+<p> </p>
+<p><font color="#0000FF">0004</font></p>
+<p><font color="#0000FF">JSR</font></p>
+<p><font color="#0000FF">Jump To Subroutine</font></p>
+<p><font color="#0000FF">SBR File Number</font></p>
+<p>U:252</p>
+<p><font color="#0000FF">JSR</font></p>
+<p>CALC_PEAKS_MEANS</p>
+<p><font color="#0000FF">0005</font></p>
+<p><font color="#0000FF">END</font></p>
+<p> </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 254 - RNK6BUBBLE --- Total Rungs in File = 6</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:20</p>
+<p>Bubble sort of values with the six highest counts in the Rank6 arrays</p>
+<p>Called once every time a new measurement value is read*, so the count of that values bin has incremented by 1</p>
+<p>- It is assumed that all other bins have not changed, so the new bin is the only one that may need to moved within the count-sorted Rank6 arrays</p>
+<p>- It is assumed that the new bin count has increased (by 1), so it will only bubble up in the Rank6 arrays</p>
+<p>  - and for each rank into which it bubbles up, the previous at in that rank will drop down</p>
+<p>* Falling edge of SEND_LOAD_CELL_DATUM</p>
+<p>========================================================================</p>
+<p>Get current rank of the new bin from the Rank6 bins array</p>
+<p>Place the updated count of the new bin in the ranked position of that bin in the Rank6 counts array</p>
+<p> </p>
+<p><font color="#0000FF">0000</font></p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>N254:[N250:0]</p>
+<p><font color="#0000FF"> </font></p>
+<p>5&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:1</p>
+<p><font color="#0000FF"> </font></p>
+<p>5&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>RANK6_OF_INEWBIN</p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>N253:[N250:0]</p>
+<p><font color="#0000FF"> </font></p>
+<p>345&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N251:[N250:1]</p>
+<p><font color="#0000FF"> </font></p>
+<p>345&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>N251:[RANK6_OF_INEWBIN]</p>
+<p>If the new bin is already at the top (i.e. at element 6) of the count-sorted ranking, return and do nothing else here,</p>
+<p>because the count has just increased and it cannot bubble up past the top</p>
+<p> </p>
+<p><font color="#0000FF">0001</font></p>
+<p><font color="#0000FF">GRT</font></p>
+<p><font color="#0000FF">Greater Than (A&gt;B)</font></p>
+<p><font color="#0000FF">Source A</font> N254:[N250:0]</p>
+<p><font color="#0000FF"> </font></p>
+<p>5&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>5</p>
+<p><font color="#0000FF"> </font></p>
+<p>5&lt;</p>
+<p><font color="#0000FF">GRT</font></p>
+<p>__RANK6_INEWBIN</p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">Return</font></p>
+<p><font color="#0000FF">RET</font></p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 254 - RNK6BUBBLE --- Total Rungs in File = 6</p>
+<p>Page 2  </p>
+<p>Tuesday, July 05, 2022 - 09:08:20</p>
+<p>Calculate the next rank up from, i.e. one more than, the previous rank of the new bin</p>
+<p>Return and do nothing if the count of the new bin is less than or equal to the count of that next bin up</p>
+<p>- i.e. the new bin does not need to bubble up</p>
+<p> </p>
+<p><font color="#0000FF">0002</font></p>
+<p><font color="#0000FF">ADD</font></p>
+<p><font color="#0000FF">Add</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:1</p>
+<p><font color="#0000FF"> </font></p>
+<p>5&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>1</p>
+<p><font color="#0000FF"> </font></p>
+<p>1&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:2</p>
+<p><font color="#0000FF"> </font></p>
+<p>6&lt;</p>
+<p><font color="#0000FF">ADD</font></p>
+<p>RANK6_OF_NEXT_BIN_UP</p>
+<p><font color="#0000FF">LEQ</font></p>
+<p><font color="#0000FF">Less Than or Eql (A&lt;=B)</font></p>
+<p><font color="#0000FF">Source A</font> N251:[N250:1]</p>
+<p><font color="#0000FF"> </font></p>
+<p>345&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>N251:[N250:2]</p>
+<p><font color="#0000FF"> </font></p>
+<p>563&lt;</p>
+<p><font color="#0000FF">LEQ</font></p>
+<p>N251:[RANK6_OF_INEWBIN]</p>
+<p><font color="#0000FF">RET</font></p>
+<p><font color="#0000FF">Return</font></p>
+<p><font color="#0000FF">RET</font></p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 254 - RNK6BUBBLE --- Total Rungs in File = 6</p>
+<p>Page 3  </p>
+<p>Tuesday, July 05, 2022 - 09:08:20</p>
+<p>To here, the bins and counts of [the new bin] and [the next bin up] will swap positions in the Rank6 arrays:</p>
+<p>- The next bin up will drop down one in the rankings, ...</p>
+<p>  - Get the index of the next bin up from the Rank6 bins array</p>
+<p>  - If that index is non-negative, then then move the new bin's current rank to the next bin up's rank in the RANK6_I array</p>
+<p>  - Put the next bin up into its new ranked position in the Rank6 bins array</p>
+<p>  - Put the next bin up's count into its new position in the Rank6 counts array</p>
+<p> </p>
+<p><font color="#0000FF">0003</font></p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>N252:[N250:2]</p>
+<p><font color="#0000FF"> </font></p>
+<p>67&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N250:3</p>
+<p><font color="#0000FF"> </font></p>
+<p>68&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>INEXT_BIN_UP</p>
+<p><font color="#0000FF">GRT</font></p>
+<p><font color="#0000FF">Greater Than (A&gt;B)</font></p>
+<p><font color="#0000FF">Source A</font></p>
+<p>N250:3</p>
+<p><font color="#0000FF"> </font></p>
+<p>68&lt;</p>
+<p><font color="#0000FF">Source B</font></p>
+<p>-1</p>
+<p><font color="#0000FF"> </font></p>
+<p>-1&lt;</p>
+<p><font color="#0000FF">GRT</font></p>
+<p>INEXT_BIN_UP</p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>N250:1</p>
+<p><font color="#0000FF"> </font></p>
+<p>5&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N254:[N250:3]</p>
+<p><font color="#0000FF"> </font></p>
+<p>4&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>N254:[INEXT_BIN_UP]</p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>N252:[N250:2]</p>
+<p><font color="#0000FF"> </font></p>
+<p>67&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N252:[N250:1]</p>
+<p><font color="#0000FF"> </font></p>
+<p>46&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>N252:[RANK6_OF_INEWBIN]</p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>N251:[N250:2]</p>
+<p><font color="#0000FF"> </font></p>
+<p>563&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N251:[N250:1]</p>
+<p><font color="#0000FF"> </font></p>
+<p>345&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>N251:[RANK6_OF_INEWBIN]</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 254 - RNK6BUBBLE --- Total Rungs in File = 6</p>
+<p>Page 4  </p>
+<p>Tuesday, July 05, 2022 - 09:08:20</p>
+<p>- ... And the new bin will bubble up one in the rankings.</p>
+<p>  - MOVe next bin up's former rank to the new bin's rank in the RANK6_I array</p>
+<p>  - Put the new bin into its new ranked position, i.e. the previous position of the next bin up, in the Rank6 bins array</p>
+<p>  - Put the new bin's count into its new position in the Rank6 counts array</p>
+<p> </p>
+<p><font color="#0000FF">0004</font></p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>N250:2</p>
+<p><font color="#0000FF"> </font></p>
+<p>6&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N254:[N250:0]</p>
+<p><font color="#0000FF"> </font></p>
+<p>5&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>__RANK6_INEWBIN</p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>N250:0</p>
+<p><font color="#0000FF"> </font></p>
+<p>46&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N252:[N250:2]</p>
+<p><font color="#0000FF"> </font></p>
+<p>67&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>N252:[RANK6_OF_NEXT_BIN_UP]</p>
+<p><font color="#0000FF">MOV</font></p>
+<p><font color="#0000FF">Move</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>N253:[N250:0]</p>
+<p><font color="#0000FF"> </font></p>
+<p>345&lt;</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>N251:[N250:2]</p>
+<p><font color="#0000FF"> </font></p>
+<p>563&lt;</p>
+<p><font color="#0000FF">MOV</font></p>
+<p>N251:[RANK6_OF_NEXT_BIN_UP]</p>
+<p><font color="#0000FF">0005</font></p>
+<p><font color="#0000FF">END</font></p>
+<p> </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 255 - RESETRANK6 --- Total Rungs in File = 5</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:20</p>
+<p>Reset summing, ranking, and counting arrays</p>
+<p><font color="#0000FF">0000</font></p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0.0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#F255:0</p>
+<p><font color="#0000FF">Length</font></p>
+<p>64</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0.0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#F255:64</p>
+<p><font color="#0000FF">Length</font></p>
+<p>64</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0.0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#F255:128</p>
+<p><font color="#0000FF">Length</font></p>
+<p>64</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0.0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#F255:192</p>
+<p><font color="#0000FF">Length</font></p>
+<p>64</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">0001</font></p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#N254:0</p>
+<p><font color="#0000FF">Length</font></p>
+<p>128</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#N254:128</p>
+<p><font color="#0000FF">Length</font></p>
+<p>128</p>
+<p><font color="#0000FF">FLL</font></p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>LAD 255 - RESETRANK6 --- Total Rungs in File = 5</p>
+<p>Page 2  </p>
+<p>Tuesday, July 05, 2022 - 09:08:20</p>
+<p><font color="#0000FF">0002</font></p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#N253:0</p>
+<p><font color="#0000FF">Length</font></p>
+<p>128</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#N253:128</p>
+<p><font color="#0000FF">Length</font></p>
+<p>128</p>
+<p><font color="#0000FF">FLL</font></p>
+<p>Rank6 bubble sort bins and counts arrays</p>
+<p>- Initialize ranked bins arrays to non-existent bin -1 to indicate those ranks have no bins assigned to them yet</p>
+<p>- Initial all of the the counts arrays to 0, so any bin with a positive count will bubble up through those 0 counts.</p>
+<p> </p>
+<p><font color="#0000FF">0003</font></p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>-1</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#N252:0</p>
+<p><font color="#0000FF">Length</font></p>
+<p>7</p>
+<p><font color="#0000FF">FLL</font></p>
+<p>#RANK6_BINS_ARRAY</p>
+<p><font color="#0000FF">FLL</font></p>
+<p><font color="#0000FF">Fill File</font></p>
+<p><font color="#0000FF">Source</font></p>
+<p>0</p>
+<p><font color="#0000FF">Dest</font></p>
+<p>#N251:0</p>
+<p><font color="#0000FF">Length</font></p>
+<p>7</p>
+<p><font color="#0000FF">FLL</font></p>
+<p>#RANK6_COUNTS_ARRAY</p>
+<p><font color="#0000FF">0004</font></p>
+<p><font color="#0000FF">END</font></p>
+<p> </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File O0 (bin)  --  OUTPUT</p>
+<p>Page 1     (Radix Binary)</p>
+<p>Tuesday, July 05, 2022 - 09:08:20</p>
+<p>Offset   15 14 13 12 11 10  9  8  7  6  5  4  3  2  1  0                                                                                                     </p>
+<p>O:0.0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   Bul.1763     MicroLogix 1100 Series B</p>
+<p>O:0.1     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   Bul.1763     MicroLogix 1100 Series B</p>
+<p>O:0.2     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   Bul.1763     MicroLogix 1100 Series B</p>
+<p>O:0.3     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   Bul.1763     MicroLogix 1100 Series B</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File I1 (bin)  --  INPUT</p>
+<p>Page 1     (Radix Binary)</p>
+<p>Tuesday, July 05, 2022 - 09:08:20</p>
+<p>Offset   15 14 13 12 11 10  9  8  7  6  5  4  3  2  1  0                                                                                                     </p>
+<p>I:0.0     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   Bul.1763     MicroLogix 1100 Series B</p>
+<p>I:0.1     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   Bul.1763     MicroLogix 1100 Series B</p>
+<p>I:0.2     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   Bul.1763     MicroLogix 1100 Series B</p>
+<p>I:0.3     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0   Bul.1763     MicroLogix 1100 Series B</p>
+<p>I:0.4     0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0   Bul.1763     MicroLogix 1100 Series B-Analog Inp 0</p>
+<p>I:0.5     0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0   Bul.1763     MicroLogix 1100 Series B-Analog Inp 1</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File S2 (hex)  --  STATUS</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:21</p>
+<p> Main</p>
+<p> Processor Mode S:1/0 - S:1/4 = Remote Run</p>
+<p> On Power up Go To Run (Mode Behavior) S:1/12 = 0</p>
+<p> First Pass S:1/15 = No</p>
+<p> Free Running Clock S:4 = 1011-1011-1101-0110</p>
+<p> Proc</p>
+<p> OS Catalog Number S:57 = 1100</p>
+<p> OS Series S:58 = B</p>
+<p> OS FRS S:59 = </p>
+<p> Processor Catalog Number S:60 = </p>
+<p> Processor Series S:61 = A</p>
+<p> Processor FRN S:62 = </p>
+<p> User Program Type S:63 = 8108h</p>
+<p> Compiler Revision Number S:64 = </p>
+<p> Scan Times</p>
+<p> Maximum (x10 ms) S:22 = 73</p>
+<p> Watchdog (x10 ms) S:3 (high byte) = 10</p>
+<p> Last 100 uSec Scan Time S:35 = 7</p>
+<p> Scan Toggle Bit S:33/9 = 0</p>
+<p> Math</p>
+<p> Math Overflow Selected S:2/14 = 1</p>
+<p> Overflow Trap S:5/0 = 0</p>
+<p> Carry S:0/0 = 0</p>
+<p> Overflow S:0/1 = 0</p>
+<p> Zero Bit S:0/2 = 1</p>
+<p> Sign Bit S:0/3 = 0</p>
+<p> Math Register (lo word) S:13 = 0</p>
+<p> Math Register (high word) S:14-S:13 = 0</p>
+<p> Math Register (32 Bit) S:14-S:13 = 0</p>
+<p> Chan 0</p>
+<p> Processor Mode S:1/0- S:1/4 = Remote Run</p>
+<p> Node Address S:15 (low byte) = 0</p>
+<p> Baud Rate S:15 (high byte) = ?</p>
+<p> Channel Mode S:33/3 = 0</p>
+<p> Comms Active S:33/4 = 0</p>
+<p> Incoming Cmd Pending S:33/0 = 0</p>
+<p> Msg Reply Pending S:33/1 = 0</p>
+<p> Outgoing Msg Cmd Pending S:33/2 = 0</p>
+<p> Debug</p>
+<p> Suspend Code S:7 = 0</p>
+<p> Suspend File S:8 = 0</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File S2 (hex)  --  STATUS</p>
+<p>Page 2  </p>
+<p>Tuesday, July 05, 2022 - 09:08:21</p>
+<p> Errors</p>
+<p> Fault Override At Power Up S:1/8 = 0</p>
+<p> Startup Protection Fault S:1/9 = 0</p>
+<p> Major Error Halt S:1/13 = 0</p>
+<p> Overflow Trap S:5/0 = 0</p>
+<p> Control Register Error S:5/2 = 0</p>
+<p> Major Error Executing User Fault Rtn. S:5/3 = 0</p>
+<p> Battery Low S:5/11 = 0</p>
+<p> Input Filter Selection Modified S:5/13 = 0</p>
+<p> ASCII String Manipulation error S:5/15 = 0</p>
+<p> Fault Routine S:29 = 0</p>
+<p> Major Error S:6 = 0h</p>
+<p> Error Description:</p>
+<p> Protection</p>
+<p> Deny Future Access S:1/14 = No</p>
+<p> Data File Overwrite Protection Lost S:36/10 = True</p>
+<p> Mem Module</p>
+<p> Memory Module Loaded On Boot S:5/8 = 0</p>
+<p> Password Mismatch S:5/9 = 0</p>
+<p> Load Memory Module On Memory Error S:1/10 = 0</p>
+<p> Load Memory Module Always S:1/11 = 0</p>
+<p> On Power up Go To Run (Mode Behavior) S:1/12 = 0</p>
+<p> Program Compare S:2/9 = 0</p>
+<p> Data File Overwrite Protection Lost S:36/10 = 1</p>
+<p> Forces</p>
+<p> Forces Enabled S:1/5 = Yes</p>
+<p> Forces Installed S:1/6 = No</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File B3 (bin)  --  BINARY</p>
+<p>Page 1     (Radix Binary)</p>
+<p>Tuesday, July 05, 2022 - 09:08:21</p>
+<p>Offset   15 14 13 12 11 10  9  8  7  6  5  4  3  2  1  0   (Symbol) Description                                                                                                    </p>
+<p>B3:0      1  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  </p>
+<p>B3:1      0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  </p>
+<p>B3:2      0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File T4  --  TIMER</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:21</p>
+<p>Offset   EN TT DN     BASE    PRE    ACC  (Symbol) Description                                                                                                    </p>
+<p>T4:0      1  1  0 .001 sec    100     28  (LOAD_CELL_SAMPLING) </p>
+<p>T4:1      1  1  0 .001 sec    100     91  (LOAD_CELL_SAMPLING2) </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File C5  --  COUNTER</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:21</p>
+<p>Offset   CU CD DN OV UN UA    PRE    ACC  (Symbol) Description                                                                                                    </p>
+<p>C5:0      0  0  1  0  0  0    100   1873  (TOTAL_COUNT) </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File R6  --  CONTROL</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:22</p>
+<p>Offset   EN EU DN EM ER UL IN FD    LEN    POS  (Symbol) Description                                                                                                    </p>
+<p>R6:0      0  0  0  0  0  0  0  0     16      0  </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File N7 (dec)  --  INTEGER</p>
+<p>Page 1     (Radix Decimal)</p>
+<p>Tuesday, July 05, 2022 - 09:08:22</p>
+<p>Offset        0      1      2      3      4      5      6      7      8      9                                                                                                     </p>
+<p>N7:0          0      0      6      0      0      0      0      0      0      0 </p>
+<p>N7:10         0      0      0      0      0      0      0      0      0      0 </p>
+<p>N7:20         0      0      0      0      0      0      0      0      0      0 </p>
+<p>N7:30         0      0      0      0      0      0      0      0      0      0 </p>
+<p>N7:40         0      0      0      0      0      0      0      0      0      0 </p>
+<p>N7:50         0      0      0      0      0      0      0      0      0      0 </p>
+<p>N7:60         0      0      0      0      0      0 </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File F8  --  FLOAT</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:22</p>
+<p>Offset               0             1             2             3             4                                                                                                     </p>
+<p>F8:0                 0 </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File L248 (dec)  --  SCAN_TIMES</p>
+<p>Page 1     (Radix Decimal)</p>
+<p>Tuesday, July 05, 2022 - 09:08:22</p>
+<p>Offset               0             1             2             3             4                                                                                                     </p>
+<p>L248:0               0             0             0             0             0 </p>
+<p>L248:5               0         38767         92330         46761         14472 </p>
+<p>L248:10          24269         23135         18152         10832          5463 </p>
+<p>L248:15           4244          4354          3832          2332          1206 </p>
+<p>L248:20            604           479           475           398           293 </p>
+<p>L248:25            294           287           202           151           107 </p>
+<p>L248:30             57            77            95            77            37 </p>
+<p>L248:35              9             8            21            22            16 </p>
+<p>L248:40             11             4             2             2             2 </p>
+<p>L248:45              1             7            47           108           242 </p>
+<p>L248:50            176           118            77           100           137 </p>
+<p>L248:55            176           168            98            54            28 </p>
+<p>L248:60              7            18             9             8             7 </p>
+<p>L248:65             11            10             9             1             1 </p>
+<p>L248:70              1             1             2             1             0 </p>
+<p>L248:75              0             0             0             0             0 </p>
+<p>L248:80              0             0             0             0             0 </p>
+<p>L248:85              0             0             0             0             0 </p>
+<p>L248:90              0             0             0             0             0 </p>
+<p>L248:95              0             0             0             0             0 </p>
+<p>L248:100             0             0             0             0             0 </p>
+<p>L248:105             0             0             0             0             0 </p>
+<p>L248:110             0             0             0             0             0 </p>
+<p>L248:115             0             0             0             0             0 </p>
+<p>L248:120             0             0             0             0             0 </p>
+<p>L248:125             0             0             0             0             0 </p>
+<p>L248:130             0             0             0             0             0 </p>
+<p>L248:135             0             0             0             0             0 </p>
+<p>L248:140             0             0             0             0             0 </p>
+<p>L248:145             0             0             0             0             0 </p>
+<p>L248:150             0             0             0             0             0 </p>
+<p>L248:155             0             0             0             0            19 </p>
+<p>L248:160            49            59            31             6             6 </p>
+<p>L248:165            21            22            16            11             4 </p>
+<p>L248:170             2             2             2             1             7 </p>
+<p>L248:175            47           108           242           176           118 </p>
+<p>L248:180            77           100           137           176           168 </p>
+<p>L248:185            98            54            28             7            18 </p>
+<p>L248:190             9             8             7            11            10 </p>
+<p>L248:195             9             1             1             1             1 </p>
+<p>L248:200             2             1             0             0             0 </p>
+<p>L248:205             0             0             0             0             0 </p>
+<p>L248:210             0             0             0             0             0 </p>
+<p>L248:215             0             0             0             0             0 </p>
+<p>L248:220             0             0             0             0             0 </p>
+<p>L248:225             0             0             0             0             0 </p>
+<p>L248:230             0             0             0             0             0 </p>
+<p>L248:235             0             0             0             0             0 </p>
+<p>L248:240             0             0             0             0             0 </p>
+<p>L248:245             0             0             0             0             0 </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File L248 (dec)  --  SCAN_TIMES</p>
+<p>Page 2     (Radix Decimal)</p>
+<p>Tuesday, July 05, 2022 - 09:08:22</p>
+<p>Offset               0             1             2             3             4                                                                                                     </p>
+<p>L248:250             0             0             0             0             0 </p>
+<p>L248:255             0 </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File F249  --  RNK6FLOATS</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:23</p>
+<p>Offset               0             1             2             3             4                                                                                                     </p>
+<p>F249:0        252297.8           931      270.9966      106421.1           579 </p>
+<p>F249:5        183.8016             0             0             0             0 </p>
+<p>F249:10              0             0             0             0             0 </p>
+<p>F249:15              0             0             0             0             0 </p>
+<p>F249:20              0             0             0             0             0 </p>
+<p>F249:25              0             0             0             0             0 </p>
+<p>F249:30              0             0             0             0             0 </p>
+<p>F249:35              0             0             0             0             0 </p>
+<p>F249:40              0             0             0             0             0 </p>
+<p>F249:45              0             0             0             0             0 </p>
+<p>F249:50              0             0             0             0             0 </p>
+<p>F249:55              0             0             0             0             0 </p>
+<p>F249:60              0             0             0             0             0 </p>
+<p>F249:65              0             0             0             0             0 </p>
+<p>F249:70              0             0             0             0             0 </p>
+<p>F249:75              0             0             0             0             0 </p>
+<p>F249:80              0             0             0             0             0 </p>
+<p>F249:85              0             0             0             0             0 </p>
+<p>F249:90              0             0             0             0             0 </p>
+<p>F249:95              0             0             0             0             0 </p>
+<p>F249:100             0             0             0             0             0 </p>
+<p>F249:105             0             0             0             0             0 </p>
+<p>F249:110             0             0             0             0             0 </p>
+<p>F249:115             0             0             0             0             0 </p>
+<p>F249:120             0             0             0             0             0 </p>
+<p>F249:125             0             0             0             0             0 </p>
+<p>F249:130             0             0             0             0             0 </p>
+<p>F249:135             0             0             0             0             0 </p>
+<p>F249:140             0             0             0             0             0 </p>
+<p>F249:145             0             0             0             0             0 </p>
+<p>F249:150             0             0             0             0             0 </p>
+<p>F249:155             0             0             0             0             0 </p>
+<p>F249:160             0             0             0             0             0 </p>
+<p>F249:165             0             0             0             0             0 </p>
+<p>F249:170             0             0             0             0             0 </p>
+<p>F249:175             0             0             0             0             0 </p>
+<p>F249:180             0             0             0             0             0 </p>
+<p>F249:185             0             0             0             0             0 </p>
+<p>F249:190             0             0             0             0             0 </p>
+<p>F249:195             0             0             0             0             0 </p>
+<p>F249:200             0             0             0             0             0 </p>
+<p>F249:205             0             0             0             0             0 </p>
+<p>F249:210             0             0             0             0             0 </p>
+<p>F249:215             0             0             0             0             0 </p>
+<p>F249:220             0             0             0             0             0 </p>
+<p>F249:225             0             0             0             0             0 </p>
+<p>F249:230             0             0             0             0             0 </p>
+<p>F249:235             0             0             0             0             0 </p>
+<p>F249:240             0             0             0             0             0 </p>
+<p>F249:245             0             0             0             0             0 </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File F249  --  RNK6FLOATS</p>
+<p>Page 2  </p>
+<p>Tuesday, July 05, 2022 - 09:08:23</p>
+<p>Offset               0             1             2             3             4                                                                                                     </p>
+<p>F249:250             0             0             0             0             0 </p>
+<p>F249:255             0 </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File N250 (dec)  --  RNK6_INTS</p>
+<p>Page 1     (Radix Decimal)</p>
+<p>Tuesday, July 05, 2022 - 09:08:23</p>
+<p>Offset        0      1      2      3      4      5      6      7      8      9                                                                                                     </p>
+<p>N250:0       46      5      6     68      0     66     70     44     47      0 </p>
+<p>N250:10      38      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:20       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:30       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:40       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:50       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:60       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:70       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:80       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:90       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:100      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:110      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:120      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:130      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:140      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:150      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:160      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:170      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:180      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:190      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:200      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:210      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:220      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:230      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:240      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N250:250      0      0      0      0      0      0 </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File N251 (dec)  --  RNK6COUNTS</p>
+<p>Page 1     (Radix Decimal)</p>
+<p>Tuesday, July 05, 2022 - 09:08:23</p>
+<p>Offset        0      1      2      3      4      5      6      7      8      9                                                                                                     </p>
+<p>N251:0       19     39     39    234    329    345    563 </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File N252 (dec)  --  RNK6BINS</p>
+<p>Page 1     (Radix Decimal)</p>
+<p>Tuesday, July 05, 2022 - 09:08:23</p>
+<p>Offset        0      1      2      3      4      5      6      7      8      9                                                                                                     </p>
+<p>N252:0       70     38     69     45     68     46     67 </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File N253 (dec)  --  COUNT_I</p>
+<p>Page 1     (Radix Decimal)</p>
+<p>Tuesday, July 05, 2022 - 09:08:24</p>
+<p>Offset        0      1      2      3      4      5      6      7      8      9                                                                                                     </p>
+<p>N253:0        0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:10       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:20       0      0      0      0      0      0      0      0      5      4 </p>
+<p>N253:30       7      6      9     23     18     10      4     12     39      9 </p>
+<p>N253:40       5      1      3      3     19    234    345     15      6      2 </p>
+<p>N253:50       4      2      7      5      4      4      3      3      2      1 </p>
+<p>N253:60       5      6      4      7      4     10     19    563    329     39 </p>
+<p>N253:70      34      4      0      1      2      1      2      0      3      4 </p>
+<p>N253:80       1      1      0      0      1      0      0      0      1      0 </p>
+<p>N253:90       1      1      0      1      0      0      1      0      0      1 </p>
+<p>N253:100      0      1      0      0      1      2      0      2      2      2 </p>
+<p>N253:110      1      2      0      0      0      0      0      0      0      0 </p>
+<p>N253:120      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:130      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:140      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:150      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:160      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:170      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:180      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:190      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:200      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:210      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:220      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:230      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:240      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N253:250      0      0      0      0      0      0 </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File N254 (dec)  --  RANK6_I</p>
+<p>Page 1     (Radix Decimal)</p>
+<p>Tuesday, July 05, 2022 - 09:08:24</p>
+<p>Offset        0      1      2      3      4      5      6      7      8      9                                                                                                     </p>
+<p>N254:0        0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:10       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:20       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:30       0      0      0      0      0      0      0      0      1      0 </p>
+<p>N254:40       0      0      0      0      0      3      5      0      0      0 </p>
+<p>N254:50       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:60       0      0      0      0      0      0      0      6      4      2 </p>
+<p>N254:70       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:80       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:90       0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:100      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:110      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:120      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:130      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:140      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:150      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:160      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:170      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:180      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:190      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:200      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:210      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:220      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:230      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:240      0      0      0      0      0      0      0      0      0      0 </p>
+<p>N254:250      0      0      0      0      0      0 </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File F255  --  SUM_I</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:24</p>
+<p>Offset               0             1             2             3             4                                                                                                     </p>
+<p>F255:0               0             0             0             0             0 </p>
+<p>F255:5               0             0             0             0             0 </p>
+<p>F255:10              0             0             0             0             0 </p>
+<p>F255:15              0             0             0             0             0 </p>
+<p>F255:20              0             0             0             0             0 </p>
+<p>F255:25              0             0             0      572.8938      468.8645 </p>
+<p>F255:30       849.0842      749.6947      1161.416       3073.26      2471.795 </p>
+<p>F255:35       1410.745      586.3248      1799.267      5978.022      1417.582 </p>
+<p>F255:40       803.4188      164.1026      506.2271      522.3444      3364.103 </p>
+<p>F255:45       42745.34      63675.77      2842.735      1157.753      394.1392 </p>
+<p>F255:50        803.663      409.5238      1466.178       1068.62      867.3993 </p>
+<p>F255:55       884.7375      676.1905      688.4005      468.8645      237.1184 </p>
+<p>F255:60       1205.861      1475.214      994.3834      1772.161      1028.083 </p>
+<p>F255:65       2613.187      5060.317      151760.3      89690.55      10846.88 </p>
+<p>F255:70       9528.692      1146.276             0      295.2381      594.3834 </p>
+<p>F255:75       300.6105      608.7912             0      938.7057      1269.841 </p>
+<p>F255:80       320.1465      325.0305             0             0      338.4615 </p>
+<p>F255:85              0             0             0      351.6483             0 </p>
+<p>F255:90       361.4164      364.3468             0       373.138             0 </p>
+<p>F255:95              0      386.0806             0             0      395.6044 </p>
+<p>F255:100             0      405.8608             0             0      417.3382 </p>
+<p>F255:105      843.7119             0      859.3407      867.6434      874.9695 </p>
+<p>F255:110       441.514      888.6447             0             0             0 </p>
+<p>F255:115             0             0             0             0             0 </p>
+<p>F255:120             0             0             0             0             0 </p>
+<p>F255:125             0             0             0             0             0 </p>
+<p>F255:130             0             0             0             0             0 </p>
+<p>F255:135             0             0             0             0             0 </p>
+<p>F255:140             0             0             0             0             0 </p>
+<p>F255:145             0             0             0             0             0 </p>
+<p>F255:150             0             0             0             0             0 </p>
+<p>F255:155             0             0             0             0             0 </p>
+<p>F255:160             0             0             0             0             0 </p>
+<p>F255:165             0             0             0             0             0 </p>
+<p>F255:170             0             0             0             0             0 </p>
+<p>F255:175             0             0             0             0             0 </p>
+<p>F255:180             0             0             0             0             0 </p>
+<p>F255:185             0             0             0             0             0 </p>
+<p>F255:190             0             0             0             0             0 </p>
+<p>F255:195             0             0             0             0             0 </p>
+<p>F255:200             0             0             0             0             0 </p>
+<p>F255:205             0             0             0             0             0 </p>
+<p>F255:210             0             0             0             0             0 </p>
+<p>F255:215             0             0             0             0             0 </p>
+<p>F255:220             0             0             0             0             0 </p>
+<p>F255:225             0             0             0             0             0 </p>
+<p>F255:230             0             0             0             0             0 </p>
+<p>F255:235             0             0             0             0             0 </p>
+<p>F255:240             0             0             0             0             0 </p>
+<p>F255:245             0             0             0             0             0 </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Data File F255  --  SUM_I</p>
+<p>Page 2  </p>
+<p>Tuesday, July 05, 2022 - 09:08:24</p>
+<p>Offset               0             1             2             3             4                                                                                                     </p>
+<p>F255:250             0             0             0             0             0 </p>
+<p>F255:255             0 </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Address/Symbol Database</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:25</p>
+<p>Address</p>
+<p>Symbol</p>
+<p>Scope</p>
+<p>Description</p>
+<p>Sym Group</p>
+<p>Dev. Code</p>
+<p>ABV</p>
+<p>BLW</p>
+<p>B3:0/0</p>
+<p>SEND_LOAD_CELL_DATUM</p>
+<p>Global</p>
+<p>B3:0/1</p>
+<p>RESET_TRAINING</p>
+<p>Global</p>
+<p>B3:0/2</p>
+<p>NEW_DATA_ONESHOT</p>
+<p>Global</p>
+<p>B3:0/3</p>
+<p>EMULATE_LOADCELLDATA</p>
+<p>Global</p>
+<p>B3:0/4</p>
+<p>CANCEL_TRAINING</p>
+<p>Global</p>
+<p>B3:0/5</p>
+<p>TRAINING_IS_INACTIVE</p>
+<p>Global</p>
+<p>B3:0/6</p>
+<p>TRAINING_FINISHED</p>
+<p>Global</p>
+<p>B3:0/13</p>
+<p>TRAINING_FINISH_ONSM</p>
+<p>Global</p>
+<p>B3:0/14</p>
+<p>RESET_FALLING_ONS_M</p>
+<p>Global</p>
+<p>B3:0/15</p>
+<p>NEW_DATA_ONESHOT_MEM</p>
+<p>Global</p>
+<p>C5:0</p>
+<p>TOTAL_COUNT</p>
+<p>Global</p>
+<p>C5:1</p>
+<p>F8:0</p>
+<p>LOAD_CELL_INPUT</p>
+<p>Global</p>
+<p>F8:1</p>
+<p>FILTERED_DATA</p>
+<p>Global</p>
+<p>F8:2</p>
+<p>FILTER_PARAMETER</p>
+<p>Global</p>
+<p>F8:3</p>
+<p>TEMPORARY_FLOAT</p>
+<p>Global</p>
+<p>F8:4</p>
+<p>DATA_DIFFERENCE</p>
+<p>Global</p>
+<p>F8:5</p>
+<p>FILTERED_DATA_LOW</p>
+<p>Global</p>
+<p>F8:6</p>
+<p>FILTERED_DATA_HIGH</p>
+<p>Global</p>
+<p>F8:7</p>
+<p>FILTERED_DATA_THIRD</p>
+<p>Global</p>
+<p>F249:0</p>
+<p>1ST_PEAK_VALUES_SUM</p>
+<p>Global</p>
+<p>F249:1</p>
+<p>1ST_PEAK_COUNTS_SUM</p>
+<p>Global</p>
+<p>F249:2</p>
+<p>1ST_PEAK_WEIGHT_MEAN</p>
+<p>Global</p>
+<p>F249:3</p>
+<p>2ND_PEAK_VALUES_SUM</p>
+<p>Global</p>
+<p>F249:4</p>
+<p>2ND_PEAK_COUNTS_SUM</p>
+<p>Global</p>
+<p>F249:5</p>
+<p>2ST_PEAK_WEIGHT_MEAN</p>
+<p>Global</p>
+<p>F255:[N250:0]</p>
+<p>__SUM_IBINS</p>
+<p>Global</p>
+<p>N7:0</p>
+<p>PASS_NUMBER</p>
+<p>Global</p>
+<p>N7:1</p>
+<p>LOAD_CELL_RAW_INPUT</p>
+<p>Global</p>
+<p>N7:2</p>
+<p>S35_SCAN_TIME</p>
+<p>Global</p>
+<p>N250:0</p>
+<p>INEWBIN</p>
+<p>Global</p>
+<p>N250:1</p>
+<p>RANK6_OF_INEWBIN</p>
+<p>Global</p>
+<p>N250:2</p>
+<p>RANK6_OF_NEXT_BIN_UP</p>
+<p>Global</p>
+<p>N250:3</p>
+<p>INEXT_BIN_UP</p>
+<p>Global</p>
+<p>N250:4</p>
+<p>BUBBLE_SORT_PASS</p>
+<p>Global</p>
+<p>N250:5</p>
+<p>1ST_PEAK_LO_LIMIT</p>
+<p>Global</p>
+<p>N250:6</p>
+<p>1ST_PEAK_HI_LIMIT</p>
+<p>Global</p>
+<p>N250:7</p>
+<p>2ND_PEAK_LO_LIMIT</p>
+<p>Global</p>
+<p>N250:8</p>
+<p>2ND_PEAK_HI_LIMIT</p>
+<p>Global</p>
+<p>N250:9</p>
+<p>PEAKS_IRANK6</p>
+<p>Global</p>
+<p>N250:10</p>
+<p>PEAKS_IBIN</p>
+<p>Global</p>
+<p>N251:0</p>
+<p>RANK6_COUNTS_ARRAY</p>
+<p>Global</p>
+<p>N252:0</p>
+<p>RANK6_BINS_ARRAY</p>
+<p>Global</p>
+<p>N253:[N250:0]</p>
+<p>__COUNT_INEWBIN</p>
+<p>Global</p>
+<p>N254:[N250:0]</p>
+<p>__RANK6_INEWBIN</p>
+<p>Global</p>
+<p>S:0</p>
+<p>Arithmetic Flags </p>
+<p>S:0/0</p>
+<p>Processor Arithmetic Carry Flag </p>
+<p>S:0/1</p>
+<p>Processor Arithmetic Underflow/ Overflow Flag </p>
+<p>S:0/2</p>
+<p>Processor Arithmetic Zero Flag </p>
+<p>S:0/3</p>
+<p>Processor Arithmetic Sign Flag </p>
+<p>S:1</p>
+<p>Processor Mode Status/ Control </p>
+<p>S:1/0</p>
+<p>Processor Mode Bit 0 </p>
+<p>S:1/1</p>
+<p>Processor Mode Bit 1 </p>
+<p>S:1/2</p>
+<p>Processor Mode Bit 2 </p>
+<p>S:1/3</p>
+<p>Processor Mode Bit 3 </p>
+<p>S:1/4</p>
+<p>Processor Mode Bit 4 </p>
+<p>S:1/5</p>
+<p>Forces Enabled </p>
+<p>S:1/6</p>
+<p>Forces Present </p>
+<p>S:1/7</p>
+<p>Comms Active </p>
+<p>S:1/8</p>
+<p>Fault Override at Powerup </p>
+<p>S:1/9</p>
+<p>Startup Protection Fault </p>
+<p>S:1/10</p>
+<p>Load Memory Module on Memory Error </p>
+<p>S:1/11</p>
+<p>Load Memory Module Always </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Address/Symbol Database</p>
+<p>Page 2  </p>
+<p>Tuesday, July 05, 2022 - 09:08:25</p>
+<p>Address</p>
+<p>Symbol</p>
+<p>Scope</p>
+<p>Description</p>
+<p>Sym Group</p>
+<p>Dev. Code</p>
+<p>ABV</p>
+<p>BLW</p>
+<p>S:1/12</p>
+<p>Load Memory Module and RUN </p>
+<p>S:1/13</p>
+<p>Major Error Halted </p>
+<p>S:1/14</p>
+<p>Access Denied </p>
+<p>S:1/15</p>
+<p>First Pass </p>
+<p>S:2/0</p>
+<p>STI Pending </p>
+<p>S:2/1</p>
+<p>STI Enabled </p>
+<p>S:2/2</p>
+<p>STI Executing </p>
+<p>S:2/3</p>
+<p>Index Addressing File Range </p>
+<p>S:2/4</p>
+<p>Saved with Debug Single Step </p>
+<p>S:2/5</p>
+<p>DH-485 Incoming Command Pending </p>
+<p>S:2/6</p>
+<p>DH-485 Message Reply Pending </p>
+<p>S:2/7</p>
+<p>DH-485 Outgoing Message Command Pending </p>
+<p>S:2/15</p>
+<p>Comms Servicing Selection </p>
+<p>S:3</p>
+<p>Current Scan Time/ Watchdog Scan Time </p>
+<p>S:4</p>
+<p>Time Base </p>
+<p>S:5/0</p>
+<p>Overflow Trap </p>
+<p>S:5/2</p>
+<p>Control Register Error </p>
+<p>S:5/3</p>
+<p>Major Err Detected Executing UserFault Routine </p>
+<p>S:5/4</p>
+<p>M0-M1 Referenced on Disabled Slot </p>
+<p>S:5/8</p>
+<p>Memory Module Boot </p>
+<p>S:5/9</p>
+<p>Memory Module Password Mismatch </p>
+<p>S:5/10</p>
+<p>STI Overflow </p>
+<p>S:5/11</p>
+<p>Battery Low </p>
+<p>S:6</p>
+<p>Major Error Fault Code </p>
+<p>S:7</p>
+<p>Suspend Code </p>
+<p>S:8</p>
+<p>Suspend File </p>
+<p>S:9</p>
+<p>Active Nodes </p>
+<p>S:10</p>
+<p>Active Nodes </p>
+<p>S:11</p>
+<p>I/O Slot Enables </p>
+<p>S:12</p>
+<p>I/O Slot Enables </p>
+<p>S:13</p>
+<p>Math Register </p>
+<p>S:14</p>
+<p>Math Register </p>
+<p>S:15</p>
+<p>Node Address/ Baud Rate </p>
+<p>S:16</p>
+<p>Debug Single Step Rung </p>
+<p>S:17</p>
+<p>Debug Single Step File </p>
+<p>S:18</p>
+<p>Debug Single Step Breakpoint Rung </p>
+<p>S:19</p>
+<p>Debug Single Step Breakpoint File </p>
+<p>S:20</p>
+<p>Debug Fault/ Powerdown Rung </p>
+<p>S:21</p>
+<p>Debug Fault/ Powerdown File </p>
+<p>S:22</p>
+<p>Maximum Observed Scan Time </p>
+<p>S:23</p>
+<p>Average Scan Time </p>
+<p>S:24</p>
+<p>Index Register </p>
+<p>S:25</p>
+<p>I/O Interrupt Pending </p>
+<p>S:26</p>
+<p>I/O Interrupt Pending </p>
+<p>S:27</p>
+<p>I/O Interrupt Enabled </p>
+<p>S:28</p>
+<p>I/O Interrupt Enabled </p>
+<p>S:29</p>
+<p>User Fault Routine File Number </p>
+<p>S:30</p>
+<p>STI Setpoint </p>
+<p>S:31</p>
+<p>STI File Number </p>
+<p>S:32</p>
+<p>I/O Interrupt Executing </p>
+<p>S:33</p>
+<p>Extended Proc Status Control Word </p>
+<p>S:33/0</p>
+<p>Incoming Command Pending </p>
+<p>S:33/1</p>
+<p>Message Reply Pending </p>
+<p>S:33/2</p>
+<p>Outgoing Message Command Pending </p>
+<p>S:33/3</p>
+<p>Selection Status User/DF1 </p>
+<p>S:33/4</p>
+<p>Communicat Active </p>
+<p>S:33/5</p>
+<p>Communicat Servicing Selection </p>
+<p>S:33/6</p>
+<p>Message Servicing Selection Channel 0 </p>
+<p>S:33/7</p>
+<p>Message Servicing Selection Channel 1 </p>
+<p>S:33/8</p>
+<p>Interrupt Latency Control Flag </p>
+<p>S:33/9</p>
+<p>Scan Toggle Flag </p>
+<p>S:33/10</p>
+<p>Discrete Input Interrupt Reconfigur Flag </p>
+<p>S:33/11</p>
+<p>Online Edit Status </p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Address/Symbol Database</p>
+<p>Page 3  </p>
+<p>Tuesday, July 05, 2022 - 09:08:25</p>
+<p>Address</p>
+<p>Symbol</p>
+<p>Scope</p>
+<p>Description</p>
+<p>Sym Group</p>
+<p>Dev. Code</p>
+<p>ABV</p>
+<p>BLW</p>
+<p>S:33/12</p>
+<p>Online Edit Status </p>
+<p>S:33/13</p>
+<p>Scan Time Timebase Selection </p>
+<p>S:33/14</p>
+<p>DTR Control Bit </p>
+<p>S:33/15</p>
+<p>DTR Force Bit </p>
+<p>S:34</p>
+<p>Pass-thru Disabled </p>
+<p>S:34/0</p>
+<p>Pass-Thru Disabled Flag </p>
+<p>S:34/1</p>
+<p>DH+ Active Node Table Enable Flag </p>
+<p>S:34/2</p>
+<p>Floating Point Math Flag Disable,Fl </p>
+<p>S:35</p>
+<p>Last 1 ms Scan Time </p>
+<p>S:36</p>
+<p>Extended Minor Error Bits </p>
+<p>S:36/8</p>
+<p>DII Lost </p>
+<p>S:36/9</p>
+<p>STI Lost </p>
+<p>S:36/10</p>
+<p>Memory Module Data File Overwrite Protection </p>
+<p>S:37</p>
+<p>Clock Calendar Year </p>
+<p>S:38</p>
+<p>Clock Calendar Month </p>
+<p>S:39</p>
+<p>Clock Calendar Day </p>
+<p>S:40</p>
+<p>Clock Calendar Hours </p>
+<p>S:41</p>
+<p>Clock Calendar Minutes </p>
+<p>S:42</p>
+<p>Clock Calendar Seconds </p>
+<p>S:43</p>
+<p>STI Interrupt Time </p>
+<p>S:44</p>
+<p>I/O Event Interrupt Time </p>
+<p>S:45</p>
+<p>DII Interrupt Time </p>
+<p>S:46</p>
+<p>Discrete Input Interrupt- File Number </p>
+<p>S:47</p>
+<p>Discrete Input Interrupt- Slot Number </p>
+<p>S:48</p>
+<p>Discrete Input Interrupt- Bit Mask </p>
+<p>S:49</p>
+<p>Discrete Input Interrupt- Compare Value </p>
+<p>S:50</p>
+<p>Processor Catalog Number </p>
+<p>S:51</p>
+<p>Discrete Input Interrupt- Return Number </p>
+<p>S:52</p>
+<p>Discrete Input Interrupt- Accumulat </p>
+<p>S:53</p>
+<p>Reserved/ Clock Calendar Day of the Week </p>
+<p>S:55</p>
+<p>Last DII Scan Time </p>
+<p>S:56</p>
+<p>Maximum Observed DII Scan Time </p>
+<p>S:57</p>
+<p>Operating System Catalog Number </p>
+<p>S:58</p>
+<p>Operating System Series </p>
+<p>S:59</p>
+<p>Operating System FRN </p>
+<p>S:61</p>
+<p>Processor Series </p>
+<p>S:62</p>
+<p>Processor Revision </p>
+<p>S:63</p>
+<p>User Program Type </p>
+<p>S:64</p>
+<p>User Program Functional Index </p>
+<p>S:65</p>
+<p>User RAM Size </p>
+<p>S:66</p>
+<p>Flash EEPROM Size </p>
+<p>S:67</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:68</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:69</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:70</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:71</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:72</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:73</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:74</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:75</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:76</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:77</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:78</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:79</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:80</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:81</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:82</p>
+<p>Channel 0 Active Nodes </p>
+<p>S:83</p>
+<p>DH+ Active Nodes </p>
+<p>S:84</p>
+<p>DH+ Active Nodes </p>
+<p>S:85</p>
+<p>DH+ Active Nodes </p>
+<p>S:86</p>
+<p>DH+ Active Nodes </p>
+<p>T4:0</p>
+<p>LOAD_CELL_SAMPLING</p>
+<p>Global</p>
+<p>T4:1</p>
+<p>LOAD_CELL_SAMPLING2</p>
+<p>Global</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Address/Symbol Database</p>
+<p>Page 4  </p>
+<p>Tuesday, July 05, 2022 - 09:08:25</p>
+<p>Address</p>
+<p>Symbol</p>
+<p>Scope</p>
+<p>Description</p>
+<p>Sym Group</p>
+<p>Dev. Code</p>
+<p>ABV</p>
+<p>BLW</p>
+<p>U:3</p>
+<p>FILTER_DATA</p>
+<p>Global</p>
+<p>U:4</p>
+<p>READ_LOAD_CELL_DATA</p>
+<p>Global</p>
+<p>U:5</p>
+<p>TRAINING</p>
+<p>Global</p>
+<p>U:250</p>
+<p>SCAN_TIME_HISTOGRAM</p>
+<p>Global</p>
+<p>U:251</p>
+<p>ADD_ONE_RANK6_MEMBER</p>
+<p>Global</p>
+<p>U:252</p>
+<p>CALC_PEAKS_MEANS</p>
+<p>Global</p>
+<p>U:253</p>
+<p>RANK6_ADD_NEW_VALUE</p>
+<p>Global</p>
+<p>U:254</p>
+<p>RANK6_BUBBLE_SORT</p>
+<p>Global</p>
+<p>U:255</p>
+<p>RESET_RANK6_ARRAYS</p>
+<p>Global</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Instruction Comment Database</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:25</p>
+<p>Address</p>
+<p>Instruction</p>
+<p>Description</p>
+<h1 style="page-break-before:always; "></h1>
+<p>TRAINING_BUBBLE_SORT_RUNNING.RSS</p>
+<p>Symbol Group Database</p>
+<p>Page 1  </p>
+<p>Tuesday, July 05, 2022 - 09:08:25</p>
+<p>Group_Name</p>
+<p>Description</p>
+</body>
+</html>

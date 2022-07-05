@@ -31,10 +31,14 @@ Brian T. Carcich, 2022-07-04
 
 #### Allen-Bradley MicroLogix 1100 PLC program to implement histogram approach:
 
-* data_histogram.png - Histogram plot of data from data_fixed.png
+* data_histogram.png - Histogram plot of data from data_fixed.png, log-scaled ordinate
+* data_histogram_nolog.png - Histogram plot of data from data_fixed.png, linear-scaled ordinate
 * train_histogram.py - Script to generate basis of data_histogram.png
 * training_bubble_sort_running.RSS -  RSLogix MSL program
 * training_bubble_sort_running.pdf - Printout of program and data
+* training_bubble_sort_running.htm - HTML version of PDF, for plotting
+* plot_scan_times_L248.py - Extract scan time histogram data from Data File L248 of training_bubble_sort_running.RSS/.pdf/.htm and plot it
+* plot_scan_times_L248.png - Data File L248 scan times histogram data plot
 
 #### Supporting scripts
 * emulate_load_cell.py - Script to emulate input data, writing to PLC using pycomm3; works with either PLC program above
@@ -43,8 +47,9 @@ Brian T. Carcich, 2022-07-04
 
 * plc_extract_red_data.py - Script to extract data from data_fixed.png; used by other scripts
 * plc_lowpass.py - script to parse image pixels and plot data
-* data.jpg - Original image of load cell data
+* data.jpg - Original poster's image of load cell data
 * data_fixed.png - Modified version of data.jpg that eliminates false data detections
 * data_fixed.xcf - GIMP format data_fixed.png
 * .gitignore - Git meta-data
 * README.md - this file
+
